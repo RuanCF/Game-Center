@@ -1,0 +1,50 @@
+C:\Users\ruanc\source\repos\Game Center\bin\Debug\net5.0-windows\Game Center.exe
+C:\Users\ruanc\source\repos\Game Center\bin\Debug\net5.0-windows\Game Center.deps.json
+C:\Users\ruanc\source\repos\Game Center\bin\Debug\net5.0-windows\Game Center.runtimeconfig.json
+C:\Users\ruanc\source\repos\Game Center\bin\Debug\net5.0-windows\Game Center.runtimeconfig.dev.json
+C:\Users\ruanc\source\repos\Game Center\bin\Debug\net5.0-windows\Game Center.dll
+C:\Users\ruanc\source\repos\Game Center\bin\Debug\net5.0-windows\ref\Game Center.dll
+C:\Users\ruanc\source\repos\Game Center\bin\Debug\net5.0-windows\Game Center.pdb
+C:\Users\ruanc\source\repos\Game Center\bin\Debug\net5.0-windows\MaterialSkin.dll
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game Center.csproj.AssemblyReference.cache
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game Center.csproj.GenerateResource.cache
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game Center.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game Center.AssemblyInfoInputs.cache
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game Center.AssemblyInfo.cs
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game Center.csproj.CoreCompileInputs.cache
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game Center.csproj.CopyComplete
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game Center.dll
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\ref\Game Center.dll
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game Center.pdb
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game Center.genruntimeconfig.cache
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game_Center.HomeScreen.resources
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game_Center.Games.GameLobby.resources
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game_Center.Home.LobbyScreen.resources
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game_Center.Screens.LoginScreen.resources
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game_Center.Screens.RegisterScreen.resources
+C:\Users\ruanc\source\repos\Game Center\obj\Debug\net5.0-windows\Game_Center.Properties.Resources.resources
+G:\Game Center\bin\Debug\net5.0-windows\Game Center.exe
+G:\Game Center\bin\Debug\net5.0-windows\Game Center.deps.json
+G:\Game Center\bin\Debug\net5.0-windows\Game Center.runtimeconfig.json
+G:\Game Center\bin\Debug\net5.0-windows\Game Center.runtimeconfig.dev.json
+G:\Game Center\bin\Debug\net5.0-windows\Game Center.dll
+G:\Game Center\bin\Debug\net5.0-windows\Game Center.pdb
+G:\Game Center\bin\Debug\net5.0-windows\MaterialSkin.dll
+G:\Game Center\obj\Debug\net5.0-windows\Game Center.csproj.AssemblyReference.cache
+G:\Game Center\obj\Debug\net5.0-windows\Game_Center.Games.GameLobby.resources
+G:\Game Center\obj\Debug\net5.0-windows\Game_Center.HomeScreen.resources
+G:\Game Center\obj\Debug\net5.0-windows\Game_Center.Home.LobbyScreen.resources
+G:\Game Center\obj\Debug\net5.0-windows\Game_Center.Screens.LoginScreen.resources
+G:\Game Center\obj\Debug\net5.0-windows\Game_Center.Screens.RegisterScreen.resources
+G:\Game Center\obj\Debug\net5.0-windows\Game_Center.Properties.Resources.resources
+G:\Game Center\obj\Debug\net5.0-windows\Game Center.csproj.GenerateResource.cache
+G:\Game Center\obj\Debug\net5.0-windows\Game Center.GeneratedMSBuildEditorConfig.editorconfig
+G:\Game Center\obj\Debug\net5.0-windows\Game Center.AssemblyInfoInputs.cache
+G:\Game Center\obj\Debug\net5.0-windows\Game Center.AssemblyInfo.cs
+G:\Game Center\obj\Debug\net5.0-windows\Game Center.csproj.CoreCompileInputs.cache
+G:\Game Center\obj\Debug\net5.0-windows\Game Center.csproj.CopyComplete
+G:\Game Center\obj\Debug\net5.0-windows\Game Center.dll
+G:\Game Center\obj\Debug\net5.0-windows\refint\Game Center.dll
+G:\Game Center\obj\Debug\net5.0-windows\Game Center.pdb
+G:\Game Center\obj\Debug\net5.0-windows\Game Center.genruntimeconfig.cache
+G:\Game Center\obj\Debug\net5.0-windows\ref\Game Center.dll

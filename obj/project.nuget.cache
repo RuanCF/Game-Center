@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CHvC1I/h9i56twuymbKfBSnh6foH1Z2KEaJysDBqmmlsizcP3ODO61aEh42eoGO43R3MmDAOP95vMLbmmTqLvA==",
+  "success": true,
+  "projectFilePath": "G:\\Game Center\\Game Center.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ruan-\\.nuget\\packages\\materialskin.2\\2.3.1\\materialskin.2.2.3.1.nupkg.sha512",
+    "C:\\Users\\ruan-\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512"
+  ],
+  "logs": []
+}

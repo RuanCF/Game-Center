@@ -1,0 +1,8 @@
+Codigo para colocar um form dentro do outro, PRECISA DE UM PANEL
+
+            this.pnlFormLoader.Controls.Clear();
+            CashFlowPage CashFlowPage_vrb = new CashFlowPage() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            CashFlowPage_vrb.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(CashFlowPage_vrb);
+            CashFlowPage_vrb.Show();
+            
