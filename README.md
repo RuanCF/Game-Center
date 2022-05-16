@@ -1,8 +1,8 @@
-## Game-Center
+# Game-Center<br>
  
-Repositório para o projeto de Orientação a Objetos
+Repositório para o projeto de Orientação a Objetos.
 
-# Integrantes<br>
+## Integrantes<br>
 
 <table>
   <tr>
@@ -22,7 +22,6 @@ Repositório para o projeto de Orientação a Objetos
         </sub>
       </a>
     </td>
-    <tr>
     <td align="center">
       <a href="https://github.com/Igao2 ">
         <img src="https://avatars.githubusercontent.com/u/91141990?v=4" width="100px;" alt="Foto do Igor Costa no GitHub"/><br>
