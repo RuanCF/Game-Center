@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,16 +21,9 @@ namespace Game_Center.Screens
         public LoginScreen()
         {
             InitializeComponent();
-            // Criando um material theme manager e adicionando o formulário
-            MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-
-            // Definindo um esquema de Cor para formulário com tom Azul
-            materialSkinManager.ColorScheme = new ColorScheme(
-            Primary.DeepPurple900, Primary.BlueGrey900, Primary.BlueGrey900, Accent.Purple400, TextShade.WHITE
-            );
+ 
         }
+
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
@@ -42,6 +36,17 @@ namespace Game_Center.Screens
         private void LoginScreen_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoginScreen_Paint_1(object sender, PaintEventArgs e)
+        {
+            Graphics mgraphics = e.Graphics;
+            Pen pen = new Pen(Color.FromArgb(127, 03, 22), 1);
+
+            Rectangle area = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
+            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(127, 03, 22), Color.FromArgb(41, 56, 73), LinearGradientMode.Vertical);
+            mgraphics.FillRectangle(lgb, area);
+            mgraphics.DrawRectangle(pen, area);
         }
     }
 }
