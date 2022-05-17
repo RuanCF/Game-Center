@@ -1236,19 +1236,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ruanc\\.nuget\\packages\\": {}
+    "C:\\Users\\ruan-\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ruanc\\Documents\\GitHub\\Game-Center\\Game Center.csproj",
+      "projectUniqueName": "C:\\Users\\ruan-\\Documents\\C#\\Game-Center\\Game Center.csproj",
       "projectName": "Game Center",
-      "projectPath": "C:\\Users\\ruanc\\Documents\\GitHub\\Game-Center\\Game Center.csproj",
-      "packagesPath": "C:\\Users\\ruanc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ruanc\\Documents\\GitHub\\Game-Center\\obj\\",
+      "projectPath": "C:\\Users\\ruan-\\Documents\\C#\\Game-Center\\Game Center.csproj",
+      "packagesPath": "C:\\Users\\ruan-\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ruan-\\Documents\\C#\\Game-Center\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ruanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ruan-\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1297,12 +1297,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.14, 5.0.14]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -1311,7 +1305,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
