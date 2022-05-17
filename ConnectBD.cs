@@ -8,19 +8,25 @@ using System.Data.SQLite;
 namespace Game_Center
 {
     class ConnectBD
-    
+
     {
-        //public SQLiteConnection conn = new SQLiteConnection("Data Source =(Path.GetFullPath(@""..\..\src"")+(@");
+       public SQLiteConnection conn = new SQLiteConnection("Data Source=UserCase.sdb");
 
-       // public void conectar()
-       // {
-       //     conn.Open();
-       // }
-       // public void desconectar()
-       // {
-       //    conn.Close();
-       // }
+        public void conectar()
+        {
+            conn.Open();
+        }
 
-     }
+        public void desconectar()
+        {
+            conn.Close();
+        }
+    }
+   }
+        
+
     
-}
+    
+   
+    
+
