@@ -32,14 +32,19 @@ namespace Game_Center.Screens
             this.BtnLogin = new System.Windows.Forms.Button();
             this.txtNick = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BtnLogin
             // 
+            this.BtnLogin.AccessibleName = "";
+            this.BtnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnLogin.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnLogin.Location = new System.Drawing.Point(229, 382);
+            this.BtnLogin.Location = new System.Drawing.Point(65, 313);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(137, 40);
+            this.BtnLogin.Size = new System.Drawing.Size(174, 44);
             this.BtnLogin.TabIndex = 0;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = true;
@@ -47,8 +52,11 @@ namespace Game_Center.Screens
             // 
             // txtNick
             // 
+            this.txtNick.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNick.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNick.Location = new System.Drawing.Point(210, 141);
+            this.txtNick.Location = new System.Drawing.Point(65, 80);
             this.txtNick.Name = "txtNick";
             this.txtNick.PlaceholderText = "Nick";
             this.txtNick.Size = new System.Drawing.Size(174, 35);
@@ -56,28 +64,47 @@ namespace Game_Center.Screens
             // 
             // txtSenha
             // 
+            this.txtSenha.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSenha.Location = new System.Drawing.Point(210, 236);
+            this.txtSenha.Location = new System.Drawing.Point(65, 175);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.PlaceholderText = "Senha";
             this.txtSenha.Size = new System.Drawing.Size(174, 35);
             this.txtSenha.TabIndex = 2;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.IndianRed;
+            this.panel1.Controls.Add(this.txtSenha);
+            this.panel1.Controls.Add(this.BtnLogin);
+            this.panel1.Controls.Add(this.txtNick);
+            this.panel1.Location = new System.Drawing.Point(273, 45);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(292, 422);
+            this.panel1.TabIndex = 3;
+            // 
             // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(600, 520);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtNick);
-            this.Controls.Add(this.BtnLogin);
+            this.BackgroundImage = global::Game_Center.Properties.Resources.Purple_Neon_Galaxy_Gaming_Desktop_Wallpaper2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(838, 518);
+            this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Name = "LoginScreen";
             this.Text = "LoginScreen";
             this.Load += new System.EventHandler(this.LoginScreen_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.LoginScreen_Paint_1);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -87,5 +114,6 @@ namespace Game_Center.Screens
         private System.Windows.Forms.Button BtnLogin;
         private System.Windows.Forms.TextBox txtNick;
         private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using Game_Center.Home;
+using Game_Center.Song;
 //using MaterialSkin;             // <<<< NECESSARIO para a framework(MateriaSkin)
 //using MaterialSkin.Controls;        // <<<< NECESSARIO para a framework(MateriaSkin)
 using System.Data.SQLite;
@@ -18,6 +19,11 @@ namespace Game_Center.Screens
         public LoginScreen()
         {
             InitializeComponent();
+        }
+        private void LoginScreen_Load(object sender, EventArgs e)
+        {
+            ClassSong Song = new();
+            Song.PlaySong();
         }
 
         private readonly string dbcon = @"Data Source=UserCenter.sdb";
@@ -94,20 +100,17 @@ namespace Game_Center.Screens
 
         }
 
-        private void LoginScreen_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void LoginScreen_Paint_1(object sender, PaintEventArgs e)
         {
-            Graphics mgraphics = e.Graphics;
-            Pen pen = new Pen(Color.FromArgb(127, 03, 22), 1);
+           //Graphics mgraphics = e.Graphics;
+           // Pen pen = new Pen(Color.FromArgb(127, 03, 22), 1);
 
-            Rectangle area = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
-            LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(127, 03, 22), Color.FromArgb(41, 56, 73), LinearGradientMode.Vertical);
-            mgraphics.FillRectangle(lgb, area);
-            mgraphics.DrawRectangle(pen, area);
+           // Rectangle area = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
+           // LinearGradientBrush lgb = new LinearGradientBrush(area, Color.FromArgb(127, 03, 22), Color.FromArgb(41, 56, 73), LinearGradientMode.Vertical);
+           // mgraphics.FillRectangle(lgb, area);
+           // mgraphics.DrawRectangle(pen, area);
         }
 
 
