@@ -16,7 +16,7 @@ namespace Game_Center
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TestScreen()); //Tela q inicia o projeto!!!
+            Application.Run(new LoginScreen()); //Tela q inicia o projeto!!!
         }
     }
 }
