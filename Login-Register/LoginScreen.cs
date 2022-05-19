@@ -1,36 +1,97 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Game_Center.Home;
-using Game_Center.Games;
-using Game_Center.Screens;
-using MaterialSkin;             // <<<< NECESSARIO para a framework(MateriaSkin)
-using MaterialSkin.Controls;        // <<<< NECESSARIO para a framework(MateriaSkin)
+//using MaterialSkin;             // <<<< NECESSARIO para a framework(MateriaSkin)
+//using MaterialSkin.Controls;        // <<<< NECESSARIO para a framework(MateriaSkin)
+using System.Data.SQLite;
 
 namespace Game_Center.Screens
 {
-    public partial class LoginScreen : MaterialForm
+    public partial class LoginScreen : Form
     {
+        #region Attributes
+
+        #endregion
         public LoginScreen()
         {
             InitializeComponent();
- 
         }
 
-
+        private readonly string dbcon = @"Data Source=UserCenter.sdb";
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            LobbyScreen Lobby = new();
-            this.Hide();
-            Lobby.ShowDialog();
-            //this.Close();
+            SQLiteConnection sqlcon = new(dbcon);
+
+            if (((txtNick.Text == "") && (txtSenha.Text == "")) || (txtNick.Text == "") || (txtSenha.Text == ""))
+            {
+                MessageBox.Show("Nick e(ou) Senha vazios",
+                                "",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Exclamation);
+                txtSenha.Clear();
+                txtNick.Clear();
+                txtNick.Focus();
+            }
+            else
+            {
+                ConnectDB con = new();
+                try
+                {
+                    con.Conectar();
+                    sqlcon.Open();
+
+                    string query = "SELECT * FROM UserData where NickName = '"
+                                 + txtNick.Text
+                                    + "' AND Password = '"
+                                        + txtSenha.Text
+                                            + "'";
+
+                    SQLiteCommand com = new(query, sqlcon);
+                    com.ExecuteNonQuery();
+                    SQLiteDataReader dr = com.ExecuteReader();
+
+                    int count = 0;
+
+                    while (dr.Read())
+                    {
+                        count++;
+                    }
+                    if (count == 1)
+                    {
+                        MessageBox.Show("Bem vindo ao Game Center",
+                                        "",
+                                            MessageBoxButtons.OK,
+                                                MessageBoxIcon.Information);
+                        LobbyScreen Lobby = new();
+                        this.Hide();
+                        Lobby.ShowDialog();
+                    }
+                    if (count < 1)
+                    {
+                        MessageBox.Show("Registro nao encontrado",
+                                        "",
+                                            MessageBoxButtons.OK,
+                                                MessageBoxIcon.Exclamation);
+                        txtSenha.Clear();
+                        txtNick.Clear();
+                        txtNick.Focus();
+                    }
+
+                    SQLiteDataAdapter dados = new(query, con.conn);
+                    DataTable UserData = new();
+
+                }catch (Exception E)
+                {
+                    MessageBox.Show(E.Message.ToString(),
+                                    "Error",
+                                        MessageBoxButtons.OK,
+                                            MessageBoxIcon.Error);
+                }
+            }
+
         }
 
         private void LoginScreen_Load(object sender, EventArgs e)
@@ -48,5 +109,7 @@ namespace Game_Center.Screens
             mgraphics.FillRectangle(lgb, area);
             mgraphics.DrawRectangle(pen, area);
         }
+
+
     }
 }
