@@ -6,8 +6,8 @@
       "version": "5.0.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\ruanc\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ruanc\\.nuget\\packages"
+      "C:\\Users\\ruan-\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ruan-\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
