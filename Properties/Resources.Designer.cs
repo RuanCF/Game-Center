@@ -63,36 +63,6 @@ namespace Game_Center.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _2949874 {
-            get {
-                object obj = ResourceManager.GetObject("2949874", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Black_Purple_Simple_Gaming_Phone_Wallpaper {
-            get {
-                object obj = ResourceManager.GetObject("Black Purple Simple Gaming Phone Wallpaper", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap f5808a068f3536ae24e695c1f8d1acd6 {
-            get {
-                object obj = ResourceManager.GetObject("f5808a068f3536ae24e695c1f8d1acd6", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Purple_Neon_Galaxy_Gaming_Desktop_Wallpaper {
             get {
                 object obj = ResourceManager.GetObject("Purple Neon Galaxy Gaming Desktop Wallpaper", resourceCulture);
@@ -153,9 +123,9 @@ namespace Game_Center.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Welcome {
+        internal static System.Drawing.Bitmap Wellcome {
             get {
-                object obj = ResourceManager.GetObject("Welcome", resourceCulture);
+                object obj = ResourceManager.GetObject("Wellcome", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

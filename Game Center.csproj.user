@@ -16,6 +16,9 @@
     <Compile Update="Login-Register\RegisterScreen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Song\ConfigSong.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TestScreen.cs">
       <SubType>Form</SubType>
     </Compile>
