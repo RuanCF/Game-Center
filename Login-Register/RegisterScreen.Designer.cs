@@ -66,22 +66,22 @@ namespace Game_Center.Screens
             // BtnRegister
             // 
             this.BtnRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnRegister.Location = new System.Drawing.Point(138, 368);
+            this.BtnRegister.Location = new System.Drawing.Point(225, 359);
             this.BtnRegister.Name = "BtnRegister";
             this.BtnRegister.Size = new System.Drawing.Size(131, 46);
             this.BtnRegister.TabIndex = 3;
-            this.BtnRegister.Text = "Register";
+            this.BtnRegister.Text = "Registrar";
             this.BtnRegister.UseVisualStyleBackColor = true;
             this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // BtnLogin
             // 
             this.BtnLogin.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnLogin.Location = new System.Drawing.Point(296, 368);
+            this.BtnLogin.Location = new System.Drawing.Point(225, 431);
             this.BtnLogin.Name = "BtnLogin";
             this.BtnLogin.Size = new System.Drawing.Size(131, 46);
             this.BtnLogin.TabIndex = 4;
-            this.BtnLogin.Text = "Login";
+            this.BtnLogin.Text = "Logue-se";
             this.BtnLogin.UseVisualStyleBackColor = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 

@@ -23,13 +23,27 @@ namespace Game_Center.Screens
         {
 
         }
-        private readonly string dbcon = @"Data Source=UserCenter.sdb";
+        //private readonly string dbcon = @"Data Source=UserCenter.sdb";
         private void BtnRegister_Click(object sender, EventArgs e)
         {
 
 
             if (txtConfirmPassword.Text != string.Empty || txtPassword.Text != string.Empty || txtNick.Text != string.Empty)
             {
+                if (
+                    (txtNick.Text == "") && (txtPassword.Text == "") && (txtConfirmPassword.Text == "") 
+                    || (txtNick.Text == "") || (txtPassword.Text == "") || (txtConfirmPassword.Text == "")
+                    )
+                {
+                    MessageBox.Show("Nick e(ou) Senha(s) vazios",
+                                    "",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Exclamation);
+                    txtPassword.Clear();
+                    txtConfirmPassword.Clear();
+                    txtNick.Clear();
+                    txtNick.Focus();
+                }
                 if (txtPassword.Text == txtConfirmPassword.Text)
                 {
                     ConnectDB con = new();
@@ -39,14 +53,20 @@ namespace Game_Center.Screens
                         string sql = "INSERT INTO UserData(NickName, Password) VALUES('" + txtNick.Text + "','" + txtPassword.Text + "')";
                         SQLiteCommand coma = new(sql, con.conn);
                         coma.ExecuteNonQuery();
+
                         MessageBox.Show("Registro efetuado com sucesso!");
+                        
                         LoginScreen Login = new();
+
                         this.Hide();
                         Login.ShowDialog();
                     }
                     catch (Exception E)
                     {
-                        MessageBox.Show(E.Message.ToString());
+                        MessageBox.Show(E.Message.ToString(),
+                                        "Error",
+                                            MessageBoxButtons.OK,
+                                                MessageBoxIcon.Error);
                     }
 
                 }
