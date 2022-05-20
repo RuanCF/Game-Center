@@ -136,3 +136,4 @@ C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\refint\Game Cen
 C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game Center.pdb
 C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game Center.genruntimeconfig.cache
 C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\ref\Game Center.dll
+C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Song.ConfigSong.resources
