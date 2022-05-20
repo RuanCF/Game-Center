@@ -31,13 +31,13 @@ namespace Game_Center.Screens
         {
             SQLiteConnection sqlcon = new(dbcon);
 
-            if (((txtNick.Text == "") && (txtSenha.Text == "")) || (txtNick.Text == "") || (txtSenha.Text == ""))
+            if (((txtNick.Text == "") && (txtPassword.Text == "")) || (txtNick.Text == "") || (txtPassword.Text == ""))
             {
                 MessageBox.Show("Nick e(ou) Senha vazios",
                                 "",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Exclamation);
-                txtSenha.Clear();
+                txtPassword.Clear();
                 txtNick.Clear();
                 txtNick.Focus();
             }
@@ -52,7 +52,7 @@ namespace Game_Center.Screens
                     string query = "SELECT * FROM UserData where NickName = '"
                                  + txtNick.Text
                                     + "' AND Password = '"
-                                        + txtSenha.Text
+                                        + txtPassword.Text
                                             + "'";
 
                     SQLiteCommand com = new(query, sqlcon);
@@ -81,7 +81,7 @@ namespace Game_Center.Screens
                                         "",
                                             MessageBoxButtons.OK,
                                                 MessageBoxIcon.Exclamation);
-                        txtSenha.Clear();
+                        txtPassword.Clear();
                         txtNick.Clear();
                         txtNick.Focus();
                     }
@@ -113,6 +113,11 @@ namespace Game_Center.Screens
            // mgraphics.DrawRectangle(pen, area);
         }
 
-
+        private void BtnRegister_Click(object sender, EventArgs e)
+        {
+            RegisterScreen Register = new();
+            this.Hide();
+            Register.ShowDialog();
+        }
     }
 }
