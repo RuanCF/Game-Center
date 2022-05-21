@@ -31,8 +31,8 @@ namespace Game_Center.Screens
             if (txtConfirmPassword.Text != string.Empty || txtPassword.Text != string.Empty || txtNick.Text != string.Empty)
             {
                 if (
-                    (txtNick.Text == "") && (txtPassword.Text == "") && (txtConfirmPassword.Text == "") 
-                    || (txtNick.Text == "") || (txtPassword.Text == "") || (txtConfirmPassword.Text == "")
+                    (txtConfirmPassword.Text == string.Empty && txtPassword.Text == string.Empty && txtNick.Text == string.Empty)
+                    || (txtConfirmPassword.Text == string.Empty || txtPassword.Text == string.Empty || txtNick.Text == string.Empty)
                     )
                 {
                     MessageBox.Show("Nick e(ou) Senha(s) vazios",
@@ -54,7 +54,7 @@ namespace Game_Center.Screens
                         SQLiteCommand coma = new(sql, con.conn);
                         coma.ExecuteNonQuery();
 
-                        MessageBox.Show("Registro efetuado com sucesso!");
+                        MessageBox.Show("Seu resgistro foi efetuado com sucesso!");
                         
                         LoginScreen Login = new();
 

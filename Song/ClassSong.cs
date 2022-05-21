@@ -4,16 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Media;
+using System.IO;
 
 namespace Game_Center.Song
 {
     public class ClassSong
     {
+        SoundPlayer Song = new(Path.GetFullPath(@"..\\Song\\Japanese_Future.wav")); 
         public void PlaySong()
         {
-            SoundPlayer Song = new(@"C:\\Users\\ruan-\\Documents\\C#\\Game-Center\\Song\\8Bit-Nostalgia.wav");
             Song.Play();
+        }
+        public void PlayLoopSong()
+        {
+            Song.PlayLooping();
+        }
+
+        public void StopSong()
+        {
+            Song.Stop();
         }
 
     }
 }
+  

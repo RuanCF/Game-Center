@@ -1,13 +1,16 @@
 ﻿using Game_Center.Screens;
+using Game_Center.Song;
 using System.Windows.Forms;
 
 namespace Game_Center
 {
     public partial class HomeScreen : Form
     {
+        ClassSong Song = new();
         public HomeScreen()
         {
             InitializeComponent();
+
         }
 
         private void HomeScreen_Load(object sender, System.EventArgs e)
@@ -33,6 +36,9 @@ namespace Game_Center
             Application.Exit();
         }
 
-
+        private void BtnStop_Click(object sender, System.EventArgs e)
+        {
+            Song.StopSong();
+        }
     }
 }

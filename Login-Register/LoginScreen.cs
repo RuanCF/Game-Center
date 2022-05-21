@@ -19,11 +19,11 @@ namespace Game_Center.Screens
         public LoginScreen()
         {
             InitializeComponent();
+
         }
         private void LoginScreen_Load(object sender, EventArgs e)
         {
-            ClassSong Song = new();
-            Song.PlaySong();
+
         }
 
         private readonly string dbcon = @"Data Source=UserCenter.sdb";

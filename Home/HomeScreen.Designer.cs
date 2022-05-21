@@ -32,7 +32,9 @@ namespace Game_Center
             this.btnLogar = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnStop = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogar
@@ -68,15 +70,26 @@ namespace Game_Center
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
-            // panel1
+            // pictureBox1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BackgroundImage = global::Game_Center.Properties.Resources.Wellcome;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(869, 489);
-            this.panel1.TabIndex = 3;
+            this.pictureBox1.Image = global::Game_Center.Properties.Resources.Wellcome;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(943, 417);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BtnStop
+            // 
+            this.BtnStop.BackColor = System.Drawing.Color.Snow;
+            this.BtnStop.Location = new System.Drawing.Point(12, 11);
+            this.BtnStop.Name = "BtnStop";
+            this.BtnStop.Size = new System.Drawing.Size(125, 26);
+            this.BtnStop.TabIndex = 4;
+            this.BtnStop.Text = "Para Musica";
+            this.BtnStop.UseVisualStyleBackColor = false;
+            this.BtnStop.Click += new System.EventHandler(this.BtnStop_Click);
             // 
             // HomeScreen
             // 
@@ -84,10 +97,10 @@ namespace Game_Center
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Game_Center.Properties.Resources.Wellcome;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(967, 513);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.BtnStop);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogar);
@@ -97,6 +110,7 @@ namespace Game_Center
             this.Text = "Home";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.HomeScreen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -106,7 +120,8 @@ namespace Game_Center
         private System.Windows.Forms.Button btnLogar;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BtnStop;
     }
 }
 
