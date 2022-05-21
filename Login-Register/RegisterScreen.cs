@@ -82,5 +82,11 @@ namespace Game_Center.Screens
             Login.ShowDialog();
 
         }
+
+        private void RegisterScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            HomeScreen home = new();
+            home.Show();
+        }
     }
 }

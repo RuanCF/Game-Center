@@ -98,6 +98,7 @@ namespace Game_Center.Screens
             this.MaximizeBox = false;
             this.Name = "RegisterScreen";
             this.Text = "RegisterScreen";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RegisterScreen_FormClosed);
             this.Load += new System.EventHandler(this.RegisterScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

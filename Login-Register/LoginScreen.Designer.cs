@@ -116,6 +116,7 @@ namespace Game_Center.Screens
             this.DoubleBuffered = true;
             this.Name = "LoginScreen";
             this.Text = "LoginScreen";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginScreen_FormClosed);
             this.Load += new System.EventHandler(this.LoginScreen_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.LoginScreen_Paint_1);
             this.panel1.ResumeLayout(false);

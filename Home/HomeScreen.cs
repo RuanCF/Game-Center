@@ -33,12 +33,19 @@ namespace Game_Center
 
         private void BtnExit_Click(object sender, System.EventArgs e)
         {
-            Application.Exit();
+           
         }
 
         private void BtnStop_Click(object sender, System.EventArgs e)
         {
             Song.StopSong();
+        }
+
+        private void HomeScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Song.StopSong();
+
+            Application.Exit();
         }
     }
 }
