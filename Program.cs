@@ -1,5 +1,6 @@
 using Game_Center.Games;
 using Game_Center.Screens;
+using Game_Center.Song;
 using System;
 using System.Windows.Forms;
 
@@ -13,9 +14,12 @@ namespace Game_Center
         [STAThread]
         static void Main()
         {
+
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            ClassSong Song = new();
+            Song.PlaySong();
             Application.Run(new HomeScreen()); //Tela q inicia o projeto!!!
         }
     }
