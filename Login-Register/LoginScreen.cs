@@ -119,5 +119,13 @@ namespace Game_Center.Screens
             this.Hide();
             Register.ShowDialog();
         }
+
+        private void LoginScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+            
+            HomeScreen home = new();
+            home.Show();
+        }
     }
 }

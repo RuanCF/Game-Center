@@ -10,12 +10,14 @@ namespace Game_Center.Song
 {
     public class ClassSong
     {
-        SoundPlayer Song = new(Path.GetFullPath(@"..\\Song\\Japanese_Future.wav")); 
+        SoundPlayer Song = new();
         public void PlaySong()
         {
-            Song.Play();
+           Song.SoundLocation = Path.GetFullPath(@"..\\Song\\Japanese_Future.wav");
+            Song.PlayLooping();
         }
         public void PlayLoopSong()
+
         {
             Song.PlayLooping();
         }
