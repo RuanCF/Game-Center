@@ -9,7 +9,9 @@ namespace Game_Center
 {
     class ConnectDB
     {
-       public SQLiteConnection conn = new("Data Source=UserCenter.sdb");
+        #region Declaração
+        public SQLiteConnection conn = new("Data Source=UserCenter.sdb");
+        #endregion
 
         public void Conectar()
         {
