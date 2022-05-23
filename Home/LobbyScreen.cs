@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Game_Center.Home
 {
-    public partial class LobbyScreen : MaterialSkin.Controls.MaterialForm
+    public partial class LobbyScreen : Form
     {
         public LobbyScreen()
         {

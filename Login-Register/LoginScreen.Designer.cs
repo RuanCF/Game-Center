@@ -114,6 +114,7 @@ namespace Game_Center.Screens
             this.ClientSize = new System.Drawing.Size(838, 518);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
             this.Name = "LoginScreen";
             this.Text = "LoginScreen";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginScreen_FormClosed);

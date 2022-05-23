@@ -29,85 +29,78 @@ namespace Game_Center
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeScreen));
             this.btnLogar = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnStop = new System.Windows.Forms.Button();
+            this.BtnPassLobby = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogar
             // 
             this.btnLogar.BackColor = System.Drawing.Color.Snow;
-            this.btnLogar.Location = new System.Drawing.Point(338, 466);
+            resources.ApplyResources(this.btnLogar, "btnLogar");
             this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(125, 26);
-            this.btnLogar.TabIndex = 0;
-            this.btnLogar.Text = "Logar-se";
             this.btnLogar.UseVisualStyleBackColor = false;
             this.btnLogar.Click += new System.EventHandler(this.BtnLogar_Click);
             // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Red;
-            this.btnExit.Location = new System.Drawing.Point(892, 12);
+            resources.ApplyResources(this.btnExit, "btnExit");
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(63, 25);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Sair";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.Snow;
-            this.btnRegister.Location = new System.Drawing.Point(501, 466);
+            resources.ApplyResources(this.btnRegister, "btnRegister");
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(125, 26);
-            this.btnRegister.TabIndex = 2;
-            this.btnRegister.Text = "Registrar-se";
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // pictureBox1
             // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::Game_Center.Properties.Resources.Wellcome;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(943, 417);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // BtnStop
             // 
             this.BtnStop.BackColor = System.Drawing.Color.Snow;
-            this.BtnStop.Location = new System.Drawing.Point(12, 11);
+            resources.ApplyResources(this.BtnStop, "BtnStop");
             this.BtnStop.Name = "BtnStop";
-            this.BtnStop.Size = new System.Drawing.Size(125, 26);
-            this.BtnStop.TabIndex = 4;
-            this.BtnStop.Text = "Para Musica";
             this.BtnStop.UseVisualStyleBackColor = false;
             this.BtnStop.Click += new System.EventHandler(this.BtnStop_Click);
             // 
+            // BtnPassLobby
+            // 
+            this.BtnPassLobby.BackColor = System.Drawing.Color.Snow;
+            resources.ApplyResources(this.BtnPassLobby, "BtnPassLobby");
+            this.BtnPassLobby.Name = "BtnPassLobby";
+            this.BtnPassLobby.UseVisualStyleBackColor = false;
+            this.BtnPassLobby.Click += new System.EventHandler(this.BtnPassLobby_Click);
+            // 
             // HomeScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(967, 513);
+            this.Controls.Add(this.BtnPassLobby);
             this.Controls.Add(this.BtnStop);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogar);
+            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "HomeScreen";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
             this.TopMost = true;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HomeScreen_FormClosed);
             this.Load += new System.EventHandler(this.HomeScreen_Load);
@@ -123,6 +116,7 @@ namespace Game_Center
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnStop;
+        private System.Windows.Forms.Button BtnPassLobby;
     }
 }
 
