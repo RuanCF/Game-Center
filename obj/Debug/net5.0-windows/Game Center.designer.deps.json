@@ -168,6 +168,89 @@
           }
         }
       },
+      "Syncfusion.Grid.Windows/20.1.0.57": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.1.0.57",
+          "Syncfusion.Shared.Base": "20.1.0.57",
+          "Syncfusion.Shared.Windows": "20.1.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Grid.Windows.dll": {
+            "assemblyVersion": "20.1500.0.57",
+            "fileVersion": "20.1500.0.57"
+          }
+        }
+      },
+      "Syncfusion.Licensing/20.1.0.57": {
+        "runtime": {
+          "lib/net5.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "20.1.0.57",
+            "fileVersion": "20.1.0.57"
+          }
+        }
+      },
+      "Syncfusion.Shared.Base/20.1.0.57": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.1.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Shared.Base.dll": {
+            "assemblyVersion": "20.1500.0.57",
+            "fileVersion": "20.1500.0.57"
+          }
+        }
+      },
+      "Syncfusion.Shared.Windows/20.1.0.57": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.1.0.57",
+          "Syncfusion.Shared.Base": "20.1.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Shared.Windows.dll": {
+            "assemblyVersion": "20.1500.0.57",
+            "fileVersion": "20.1500.0.57"
+          }
+        }
+      },
+      "Syncfusion.SpellChecker.Base/20.1.0.57": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.1.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.SpellChecker.Base.dll": {
+            "assemblyVersion": "20.1500.0.57",
+            "fileVersion": "20.1500.0.57"
+          }
+        }
+      },
+      "Syncfusion.Tools.Base/20.1.0.57": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.1.0.57",
+          "Syncfusion.Shared.Base": "20.1.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Tools.Base.dll": {
+            "assemblyVersion": "20.1500.0.57",
+            "fileVersion": "20.1500.0.57"
+          }
+        }
+      },
+      "Syncfusion.Tools.Windows/20.1.0.57": {
+        "dependencies": {
+          "Syncfusion.Grid.Windows": "20.1.0.57",
+          "Syncfusion.Licensing": "20.1.0.57",
+          "Syncfusion.Shared.Base": "20.1.0.57",
+          "Syncfusion.Shared.Windows": "20.1.0.57",
+          "Syncfusion.SpellChecker.Base": "20.1.0.57",
+          "Syncfusion.Tools.Base": "20.1.0.57"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Tools.Windows.dll": {
+            "assemblyVersion": "20.1500.0.57",
+            "fileVersion": "20.1500.0.57"
+          }
+        }
+      },
       "System.CodeDom/4.7.0": {
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {
@@ -446,6 +529,55 @@
       "sha512": "sha512-WfrqQg6WL+r4H1sVKTenNj6ERLXUukUxqcjH1rqPqXadeIWccTVpydESieD7cZ/NWQVSKLYIHuoBX5du+BFhIQ==",
       "path": "stub.system.data.sqlite.core.netstandard/1.0.115.5",
       "hashPath": "stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512"
+    },
+    "Syncfusion.Grid.Windows/20.1.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gdiAcy0abMNbf2NEbwfqeyiwsBhK28HR5rM+drS6DcIETxCnvC366XhiNmDUOB/eyIHCpHiF6EvIK3TUyiy2FQ==",
+      "path": "syncfusion.grid.windows/20.1.0.57",
+      "hashPath": "syncfusion.grid.windows.20.1.0.57.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/20.1.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/yK20ShXOP6BfX1esp6ejwsnEzQg4VPhzzeUqTux0Yey6fd71S6S+1BpaXmmB/TIl1r9hdhCyMhpoEZuO833SA==",
+      "path": "syncfusion.licensing/20.1.0.57",
+      "hashPath": "syncfusion.licensing.20.1.0.57.nupkg.sha512"
+    },
+    "Syncfusion.Shared.Base/20.1.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s99LGwJc7KdKWupQqHH7ISD85Vxnfnba6SIDUb+WQj/vu+2xCwKHMc+QsaKLV8A0QI2bmFJB2rmpC7viecIJDg==",
+      "path": "syncfusion.shared.base/20.1.0.57",
+      "hashPath": "syncfusion.shared.base.20.1.0.57.nupkg.sha512"
+    },
+    "Syncfusion.Shared.Windows/20.1.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FdZxmp+JOMEGNjLFEteyiMVW04PVqLxJh+Qb+rLy5FFOqysSKgVLlLx/Z47dkBn8b1xnB52OznALmRn4NXmFLA==",
+      "path": "syncfusion.shared.windows/20.1.0.57",
+      "hashPath": "syncfusion.shared.windows.20.1.0.57.nupkg.sha512"
+    },
+    "Syncfusion.SpellChecker.Base/20.1.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dAMMVYuyonHNUktorP/+00Gt0e4qWMhDpvunPmD5DQV0hbk1DxkIYGlrBC0bq/WiO8d/kgDzeMecmAqdR7+PLQ==",
+      "path": "syncfusion.spellchecker.base/20.1.0.57",
+      "hashPath": "syncfusion.spellchecker.base.20.1.0.57.nupkg.sha512"
+    },
+    "Syncfusion.Tools.Base/20.1.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YfobVy5ruLwYHi7YmNP5iUfOM8WaD1jqJkTVfzBMkPQ9tGMK9MQtedtxPZ2ebq16WVhHSFHoSvOFh9rBDDWhgg==",
+      "path": "syncfusion.tools.base/20.1.0.57",
+      "hashPath": "syncfusion.tools.base.20.1.0.57.nupkg.sha512"
+    },
+    "Syncfusion.Tools.Windows/20.1.0.57": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WsmwKz1vofwGYVmAzRAhOPFvDe92/BSZwCJ78A3iokkEMoY394MwdPiGj4wZu3hwdtjExQNi37BEqEnGO7XvLQ==",
+      "path": "syncfusion.tools.windows/20.1.0.57",
+      "hashPath": "syncfusion.tools.windows.20.1.0.57.nupkg.sha512"
     },
     "System.CodeDom/4.7.0": {
       "type": "package",

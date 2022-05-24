@@ -182,3 +182,10 @@ C:\Users\User\Desktop\projetogames\Game-Center\obj\Debug\net5.0-windows\Game Cen
 C:\Users\User\Desktop\projetogames\Game-Center\obj\Debug\net5.0-windows\ref\Game Center.dll
 C:\Users\User\Desktop\projetogames\Game-Center\obj\Debug\net5.0-windows\Game Center.pdb
 C:\Users\User\Desktop\projetogames\Game-Center\obj\Debug\net5.0-windows\Game Center.genruntimeconfig.cache
+C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Grid.Windows.dll
+C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Licensing.dll
+C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Shared.Base.dll
+C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Shared.Windows.dll
+C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.SpellChecker.Base.dll
+C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Base.dll
+C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Windows.dll

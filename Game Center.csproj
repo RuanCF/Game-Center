@@ -10,6 +10,8 @@
   <ItemGroup>
     <PackageReference Include="MaterialSkin.2" Version="2.3.1" />
     <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="Syncfusion.Grid.Windows" Version="20.1.0.57" />
+    <PackageReference Include="Syncfusion.Tools.Windows" Version="20.1.0.57" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.115.5" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.115.5" />
   </ItemGroup>

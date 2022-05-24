@@ -29,58 +29,86 @@ namespace Game_Center.Games
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.Timer = new System.Windows.Forms.Timer(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnTeste = new System.Windows.Forms.Button();
+            this.resultado = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.LblResultado = new System.Windows.Forms.Label();
+            this.carousel1 = new Syncfusion.Windows.Forms.Tools.Carousel();
             this.SuspendLayout();
             // 
-            // materialLabel1
+            // resultado
             // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(6, 78);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(107, 19);
-            this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "materialLabel1";
+            this.resultado.Location = new System.Drawing.Point(305, 269);
+            this.resultado.Name = "resultado";
+            this.resultado.ReadOnly = true;
+            this.resultado.Size = new System.Drawing.Size(100, 23);
+            this.resultado.TabIndex = 2;
             // 
-            // Timer
+            // textBox1
             // 
-            this.Timer.Enabled = true;
+            this.textBox1.Location = new System.Drawing.Point(305, 120);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 3;
             // 
-            // btnTeste
+            // textBox2
             // 
-            this.btnTeste.Location = new System.Drawing.Point(198, 162);
-            this.btnTeste.Name = "btnTeste";
-            this.btnTeste.Size = new System.Drawing.Size(75, 23);
-            this.btnTeste.TabIndex = 1;
-            this.btnTeste.Text = "button1";
-            this.btnTeste.UseVisualStyleBackColor = true;
+            this.textBox2.Location = new System.Drawing.Point(305, 166);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 4;
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            // 
+            // LblResultado
+            // 
+            this.LblResultado.AutoSize = true;
+            this.LblResultado.Location = new System.Drawing.Point(323, 251);
+            this.LblResultado.Name = "LblResultado";
+            this.LblResultado.Size = new System.Drawing.Size(59, 15);
+            this.LblResultado.TabIndex = 5;
+            this.LblResultado.Text = "Resultado";
+            // 
+            // carousel1
+            // 
+            this.carousel1.HighlightColor = System.Drawing.Color.White;
+            this.carousel1.ImageshadeColor = System.Drawing.Color.Black;
+            this.carousel1.ImageSlides = false;
+            this.carousel1.Location = new System.Drawing.Point(396, 73);
+            this.carousel1.Name = "carousel1";
+            this.carousel1.PadX = 0;
+            this.carousel1.PadY = 0;
+            this.carousel1.Perspective = 4F;
+            this.carousel1.RotateAlways = false;
+            this.carousel1.ShowImagePreview = false;
+            this.carousel1.ShowImageShadow = true;
+            this.carousel1.Size = new System.Drawing.Size(8, 8);
+            this.carousel1.TabIndex = 6;
+            this.carousel1.Text = "carousel1";
+            this.carousel1.TouchTransitionSpeed = 1F;
+            this.carousel1.UseOriginalImageinPreview = false;
             // 
             // GameLobby
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnTeste);
-            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.carousel1);
+            this.Controls.Add(this.LblResultado);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.resultado);
             this.Name = "GameLobby";
             this.Text = "GameLobby";
-            this.Load += new System.EventHandler(this.GameLobby_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private System.Windows.Forms.Timer Timer;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button btnTeste;
+        private System.Windows.Forms.TextBox resultado;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label LblResultado;
+        private Syncfusion.Windows.Forms.Tools.Carousel carousel1;
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/jZKbPcWi1eJWxRc3pvxyC4cj1tNOVwszirN/mTwe6nVu9ku5Di1k1oUajtDZ3sWp1yBu5htxEVhmAUV6HH3Ag==",
+  "dgSpecHash": "Ih22zhUcec0Oeo6BM/4R6GgYzfKwJLTtc8uLJ+ZN+ylGlozCWtT90z+mEIx/fR/LLI8un9G8F+nx3oY/KEhWpg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ruan-\\Documents\\C#\\Game-Center\\Game Center.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,13 @@
     "C:\\Users\\ruan-\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\ruan-\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
     "C:\\Users\\ruan-\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\ruan-\\.nuget\\packages\\syncfusion.grid.windows\\20.1.0.57\\syncfusion.grid.windows.20.1.0.57.nupkg.sha512",
+    "C:\\Users\\ruan-\\.nuget\\packages\\syncfusion.licensing\\20.1.0.57\\syncfusion.licensing.20.1.0.57.nupkg.sha512",
+    "C:\\Users\\ruan-\\.nuget\\packages\\syncfusion.shared.base\\20.1.0.57\\syncfusion.shared.base.20.1.0.57.nupkg.sha512",
+    "C:\\Users\\ruan-\\.nuget\\packages\\syncfusion.shared.windows\\20.1.0.57\\syncfusion.shared.windows.20.1.0.57.nupkg.sha512",
+    "C:\\Users\\ruan-\\.nuget\\packages\\syncfusion.spellchecker.base\\20.1.0.57\\syncfusion.spellchecker.base.20.1.0.57.nupkg.sha512",
+    "C:\\Users\\ruan-\\.nuget\\packages\\syncfusion.tools.base\\20.1.0.57\\syncfusion.tools.base.20.1.0.57.nupkg.sha512",
+    "C:\\Users\\ruan-\\.nuget\\packages\\syncfusion.tools.windows\\20.1.0.57\\syncfusion.tools.windows.20.1.0.57.nupkg.sha512",
     "C:\\Users\\ruan-\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",
     "C:\\Users\\ruan-\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\ruan-\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",

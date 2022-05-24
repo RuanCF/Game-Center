@@ -36,6 +36,7 @@ namespace Game_Center
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnStop = new System.Windows.Forms.Button();
             this.BtnPassLobby = new System.Windows.Forms.Button();
+            this.BtnPassGame = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,11 +87,20 @@ namespace Game_Center
             this.BtnPassLobby.UseVisualStyleBackColor = false;
             this.BtnPassLobby.Click += new System.EventHandler(this.BtnPassLobby_Click);
             // 
+            // BtnPassGame
+            // 
+            this.BtnPassGame.BackColor = System.Drawing.Color.Snow;
+            resources.ApplyResources(this.BtnPassGame, "BtnPassGame");
+            this.BtnPassGame.Name = "BtnPassGame";
+            this.BtnPassGame.UseVisualStyleBackColor = false;
+            this.BtnPassGame.Click += new System.EventHandler(this.BtnPassGame_Click);
+            // 
             // HomeScreen
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.BtnPassGame);
             this.Controls.Add(this.BtnPassLobby);
             this.Controls.Add(this.BtnStop);
             this.Controls.Add(this.btnRegister);
@@ -117,6 +127,7 @@ namespace Game_Center
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnStop;
         private System.Windows.Forms.Button BtnPassLobby;
+        private System.Windows.Forms.Button BtnPassGame;
     }
 }
 

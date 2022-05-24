@@ -1,4 +1,5 @@
-﻿using Game_Center.Home;
+﻿using Game_Center.Games;
+using Game_Center.Home;
 using Game_Center.Screens;
 using Game_Center.Song;
 using System.Windows.Forms;
@@ -53,6 +54,13 @@ namespace Game_Center
             LobbyScreen lobby = new();
             this.Hide();
             lobby.ShowDialog();
+        }
+
+        private void BtnPassGame_Click(object sender, System.EventArgs e)
+        {
+            GameLobby game = new();
+            this.Hide();
+            game.ShowDialog();
         }
     }
 }

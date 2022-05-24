@@ -48,6 +48,14 @@
               "target": "Package",
               "version": "[3.13.0, )"
             },
+            "Syncfusion.Grid.Windows": {
+              "target": "Package",
+              "version": "[20.1.0.57, )"
+            },
+            "Syncfusion.Tools.Windows": {
+              "target": "Package",
+              "version": "[20.1.0.57, )"
+            },
             "System.Data.SQLite": {
               "target": "Package",
               "version": "[1.0.115.5, )"

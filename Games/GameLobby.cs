@@ -2,62 +2,60 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MaterialSkin;             // <<<< NECESSARIO para a framework(MateriaSkin)
-using MaterialSkin.Controls;        // <<<< NECESSARIO para a framework(MateriaSkin)
 
 namespace Game_Center.Games
 {
-    public partial class GameLobby : MaterialSkin.Controls.MaterialForm
+    public partial class GameLobby : Form
     {
-
-
+        Double game1 = 100, game2 = 50, game3 = 10, game4 = 5, total = 0;
         public GameLobby()
         {
             InitializeComponent();
-            // Criando um material theme manager e adicionando o formulário
-            MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-
-            // Definindo um esquema de Cor para formulário com tom Azul
-            materialSkinManager.ColorScheme = new ColorScheme(
-            Primary.DeepPurple900, Primary.BlueGrey900, Primary.BlueGrey900, Accent.Purple400, TextShade.WHITE
-            );
+            total = game1 + game2 + game3 + game4;
+            LblResultado.Text = total.ToString();
         }
-        protected override void OnPaint(PaintEventArgs e)
+        private static SQLiteConnection sqliteConnection;
+        private static SQLiteConnection DbConnection()
         {
-            GraphicsPath forma = new GraphicsPath();
-            forma.AddEllipse(0, 0, btnTeste.Width, btnTeste.Height);
-            btnTeste.Region = new Region(forma);
+            sqliteConnection = new SQLiteConnection("Data Source = UserCenter.sdb");
+            sqliteConnection.Open();
+            return sqliteConnection;
         }
 
-        private void GameLobby_Load(object sender, EventArgs e)
+        public static DataTable GetCliente(int id)
         {
-            Timer timer = new Timer
+            SQLiteDataAdapter da = null;
+            DataTable dt = new();
+            try
             {
-                Interval = (1 * 1000)
-            };
-            timer.Tick += new EventHandler(Timer_Tick);
-            timer.Start();
-
+                using (var cmd = DbConnection().CreateCommand())
+                {
+                    cmd.CommandText = "SELECT * FROM Clientes Where Id=" + id;
+                    da = new SQLiteDataAdapter(cmd.CommandText, DbConnection());
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
+        Double Res=0;
 
-
-
-        private void Timer_Tick(object sender, EventArgs e)
-        { 
-            materialLabel1.Text = DateTime.Now.ToString("HH:mm:ss");
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            double Valor1 = Convert.ToDouble(textBox1.Text);
+            double Valor2 = Convert.ToDouble(textBox2.Text);
+            Res = Valor1 + Valor2;
+            resultado.Text = Res.ToString();
         }
-
-
     }
-
-       
-
 }
