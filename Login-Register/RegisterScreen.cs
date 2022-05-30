@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 
+
 namespace Game_Center.Screens
 {
     public partial class RegisterScreen : Form
     {
         #region Declarações
-        //private readonly string dbcon = @"Data Source=UserCenter.sdb";
         ConnectDB con = new();
         DataTable dt = new();
+        //SQLiteDataAdapter da = null;
         #endregion
         public RegisterScreen()
         {
             InitializeComponent();
-
         }
         #region Eventos
         private void RegisterScreen_Load(object sender, EventArgs e)
@@ -39,57 +39,34 @@ namespace Game_Center.Screens
                     if (txtPassword.Text == txtConfirmPassword.Text)
                     {
                         if (txtNick.Text != String.Empty)
-                        {   
-                            if (dt.Rows.Count < 1)
+                        {
+                            try
                             {
-                                MessageBox.Show("Registro ja existe",
+                                con.Conectar();
+                                string sql = "INSERT INTO UserData(NickName, Password) VALUES('" + txtNick.Text + "','" + txtPassword.Text + "')";
+                                SQLiteCommand coma = new(sql, con.conn);
+                                coma.ExecuteNonQuery();
+
+
+                                MessageBox.Show("Seu resgistro foi efetuado com sucesso!");
+
+                                LoginScreen Login = new();
+                                this.Hide();
+                                Login.ShowDialog();
+                            }
+                            catch (Exception)
+                            {
+                                MessageBox.Show("Esse nickname já está registrado", 
                                                 "",
                                                     MessageBoxButtons.OK,
-                                                        MessageBoxIcon.Exclamation);
-                                txtPassword.Clear();
-                                txtConfirmPassword.Clear();
-                                txtNick.Clear();
-                                txtNick.Focus();
+                                                        MessageBoxIcon.Error);
+                                con.Desconectar();
                             }
-                            else
-                            {
-                                try
-                                {
-                                    con.Conectar();
-                                    string sql = "INSERT INTO UserData(NickName, Password) VALUES('" + txtNick.Text + "','" + txtPassword.Text + "')";
-                                    SQLiteCommand coma = new(sql, con.conn);
-                                    coma.ExecuteNonQuery();
-
-                                    MessageBox.Show("Seu resgistro foi efetuado com sucesso!");
-
-                                    LoginScreen Login = new();
-                                    this.Hide();
-                                    Login.ShowDialog();
-                                }
-                                catch (Exception E)
-                                {
-                                    MessageBox.Show(E.Message.ToString(),
-                                                    "Error",
-                                                        MessageBoxButtons.OK,
-                                                            MessageBoxIcon.Error);
-                                }
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Nick não pode estar vazio",
-                                            "",
-                                                MessageBoxButtons.OK,
-                                                    MessageBoxIcon.Exclamation);
-                            txtPassword.Clear();
-                            txtConfirmPassword.Clear();
-                            txtNick.Clear();
-                            txtNick.Focus();
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Senhas não estão correspondentes",
+                        MessageBox.Show("Nick não pode estar vazio",
                                         "",
                                             MessageBoxButtons.OK,
                                                 MessageBoxIcon.Exclamation);
@@ -98,32 +75,34 @@ namespace Game_Center.Screens
                         txtNick.Clear();
                         txtNick.Focus();
                     }
-                    
                 }
                 else
                 {
-                    MessageBox.Show("Senhas não podem estar vazias",
-                                "",
-                                    MessageBoxButtons.OK,
-                                        MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Senhas não estão correspondentes",
+                                    "",
+                                        MessageBoxButtons.OK,
+                                            MessageBoxIcon.Exclamation);
                     txtPassword.Clear();
                     txtConfirmPassword.Clear();
                     txtNick.Clear();
                     txtNick.Focus();
                 }
+
             }
-            else //Igual a vazio
+            else
             {
-                MessageBox.Show("Nick e(ou) Senha(s) vazios",
-                                "",
-                                    MessageBoxButtons.OK,
-                                        MessageBoxIcon.Exclamation);
+                MessageBox.Show("Senhas não podem estar vazias",
+                            "",
+                                MessageBoxButtons.OK,
+                                    MessageBoxIcon.Exclamation);
                 txtPassword.Clear();
                 txtConfirmPassword.Clear();
                 txtNick.Clear();
                 txtNick.Focus();
             }
         }
+
+
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
@@ -137,6 +116,12 @@ namespace Game_Center.Screens
         {
             HomeScreen home = new();
             home.Show();
+            
+        }
+
+        private void lblname_MouseEnter(object sender, EventArgs e)
+        {
+            lblname.Text = txtNick.Text;
         }
         #endregion
     }

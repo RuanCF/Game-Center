@@ -4,6 +4,12 @@
     <Compile Update="Games\GameLobby.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Games\MenuPong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Games\Pong.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Home\HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>

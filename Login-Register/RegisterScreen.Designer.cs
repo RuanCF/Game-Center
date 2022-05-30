@@ -34,6 +34,7 @@ namespace Game_Center.Screens
             this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.BtnRegister = new System.Windows.Forms.Button();
             this.BtnLogin = new System.Windows.Forms.Button();
+            this.lblname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNick
@@ -87,11 +88,23 @@ namespace Game_Center.Screens
             this.BtnLogin.UseVisualStyleBackColor = true;
             this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
+            // lblname
+            // 
+            this.lblname.AutoSize = true;
+            this.lblname.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblname.Location = new System.Drawing.Point(122, 139);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(66, 30);
+            this.lblname.TabIndex = 5;
+            this.lblname.Text = "nome";
+            this.lblname.MouseEnter += new System.EventHandler(this.lblname_MouseEnter);
+            // 
             // RegisterScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 520);
+            this.Controls.Add(this.lblname);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.BtnRegister);
             this.Controls.Add(this.txtConfirmPassword);
@@ -114,5 +127,6 @@ namespace Game_Center.Screens
         private System.Windows.Forms.TextBox txtConfirmPassword;
         private System.Windows.Forms.Button BtnRegister;
         private System.Windows.Forms.Button BtnLogin;
+        private System.Windows.Forms.Label lblname;
     }
 }

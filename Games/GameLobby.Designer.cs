@@ -29,86 +29,94 @@ namespace Game_Center.Games
         /// </summary>
         private void InitializeComponent()
         {
-            this.resultado = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.LblResultado = new System.Windows.Forms.Label();
-            this.carousel1 = new Syncfusion.Windows.Forms.Tools.Carousel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.GM1 = new System.Windows.Forms.Label();
+            this.GM2 = new System.Windows.Forms.Label();
+            this.GM3 = new System.Windows.Forms.Label();
+            this.GM4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // resultado
-            // 
-            this.resultado.Location = new System.Drawing.Point(305, 269);
-            this.resultado.Name = "resultado";
-            this.resultado.ReadOnly = true;
-            this.resultado.Size = new System.Drawing.Size(100, 23);
-            this.resultado.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(305, 120);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(305, 166);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // LblResultado
             // 
             this.LblResultado.AutoSize = true;
-            this.LblResultado.Location = new System.Drawing.Point(323, 251);
+            this.LblResultado.Location = new System.Drawing.Point(454, 221);
             this.LblResultado.Name = "LblResultado";
-            this.LblResultado.Size = new System.Drawing.Size(59, 15);
+            this.LblResultado.Size = new System.Drawing.Size(32, 15);
             this.LblResultado.TabIndex = 5;
-            this.LblResultado.Text = "Resultado";
+            this.LblResultado.Text = "Total";
             // 
-            // carousel1
+            // button1
             // 
-            this.carousel1.HighlightColor = System.Drawing.Color.White;
-            this.carousel1.ImageshadeColor = System.Drawing.Color.Black;
-            this.carousel1.ImageSlides = false;
-            this.carousel1.Location = new System.Drawing.Point(396, 73);
-            this.carousel1.Name = "carousel1";
-            this.carousel1.PadX = 0;
-            this.carousel1.PadY = 0;
-            this.carousel1.Perspective = 4F;
-            this.carousel1.RotateAlways = false;
-            this.carousel1.ShowImagePreview = false;
-            this.carousel1.ShowImageShadow = true;
-            this.carousel1.Size = new System.Drawing.Size(8, 8);
-            this.carousel1.TabIndex = 6;
-            this.carousel1.Text = "carousel1";
-            this.carousel1.TouchTransitionSpeed = 1F;
-            this.carousel1.UseOriginalImageinPreview = false;
+            this.button1.Location = new System.Drawing.Point(454, 258);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // GM1
+            // 
+            this.GM1.AutoSize = true;
+            this.GM1.Location = new System.Drawing.Point(454, 73);
+            this.GM1.Name = "GM1";
+            this.GM1.Size = new System.Drawing.Size(44, 15);
+            this.GM1.TabIndex = 8;
+            this.GM1.Text = "Game1";
+            // 
+            // GM2
+            // 
+            this.GM2.AutoSize = true;
+            this.GM2.Location = new System.Drawing.Point(454, 110);
+            this.GM2.Name = "GM2";
+            this.GM2.Size = new System.Drawing.Size(44, 15);
+            this.GM2.TabIndex = 9;
+            this.GM2.Text = "Game2";
+            // 
+            // GM3
+            // 
+            this.GM3.AutoSize = true;
+            this.GM3.Location = new System.Drawing.Point(454, 145);
+            this.GM3.Name = "GM3";
+            this.GM3.Size = new System.Drawing.Size(44, 15);
+            this.GM3.TabIndex = 10;
+            this.GM3.Text = "Game3";
+            // 
+            // GM4
+            // 
+            this.GM4.AutoSize = true;
+            this.GM4.Location = new System.Drawing.Point(454, 183);
+            this.GM4.Name = "GM4";
+            this.GM4.Size = new System.Drawing.Size(44, 15);
+            this.GM4.TabIndex = 11;
+            this.GM4.Text = "Game4";
             // 
             // GameLobby
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.carousel1);
+            this.Controls.Add(this.GM4);
+            this.Controls.Add(this.GM3);
+            this.Controls.Add(this.GM2);
+            this.Controls.Add(this.GM1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.LblResultado);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.resultado);
             this.Name = "GameLobby";
             this.Text = "GameLobby";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameLobby_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox resultado;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label LblResultado;
-        private Syncfusion.Windows.Forms.Tools.Carousel carousel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label GM1;
+        private System.Windows.Forms.Label GM2;
+        private System.Windows.Forms.Label GM3;
+        private System.Windows.Forms.Label GM4;
     }
 }

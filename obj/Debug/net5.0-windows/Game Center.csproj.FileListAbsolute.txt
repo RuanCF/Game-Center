@@ -189,3 +189,5 @@ C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Shar
 C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.SpellChecker.Base.dll
 C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Base.dll
 C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Windows.dll
+C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.MenuPong.resources
+C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong.resources

@@ -27,12 +27,12 @@ namespace Game_Center.Screens
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            SQLiteConnection sqlcon = new(dbcon);
 
             if (txtNick.Text != "") //if Nick diferente de VAZIO
             {
                 if (txtPassword.Text != "") //if Senha diferente de VAZIO
                 {
+                    SQLiteConnection sqlcon = new(dbcon);
                     ConnectDB con = new();
                     try
                     {

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
+using Game_Center.Games;
 
 namespace Game_Center.Home
 {
@@ -28,9 +29,9 @@ namespace Game_Center.Home
 
         private void ButtonAdv1_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
+            pictureBox2.Visible = true;
             Carousel carousela = new();
-            this.Controls.Add(carousel1);
+            this.Controls.Add(carousel2);
             //Initialization
             ButtonAdv buttonAdv1 = new();
             ButtonAdv buttonAdv2 = new();
@@ -60,7 +61,7 @@ namespace Game_Center.Home
 ;
 
             //Add the custom controls into carousel
-            carousel2.Controls.Add(panel1);
+            carousel2.Controls.Add(pictureBox2);
             carousel2.Controls.Add(buttonAdv2);
             carousel2.Controls.Add(buttonAdv3);
             carousel2.Controls.Add(buttonAdv4);
@@ -69,7 +70,7 @@ namespace Game_Center.Home
 
 
             //Add the custom controls into carousel items
-            carousel2.Items.Add(panel1);
+            carousel2.Items.Add(pictureBox2);
             carousel2.Items.Add(buttonAdv2);
             carousel2.Items.Add(buttonAdv3);
             carousel2.Items.Add(buttonAdv4);
@@ -90,6 +91,20 @@ namespace Game_Center.Home
         private void LobbyScreen_Load(object sender, EventArgs e)
         {
           
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            GameLobby Game = new();
+            this.Hide();
+            Game.ShowDialog();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MenuPong menuPong = new();
+            this.Hide();
+            menuPong.ShowDialog();
         }
     }
 }

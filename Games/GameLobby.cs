@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,18 +10,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Game_Center.Song;
 
 namespace Game_Center.Games
 {
     public partial class GameLobby : Form
     {
-        Double game1 = 100, game2 = 50, game3 = 10, game4 = 5, total = 0;
+        public int game1 = 100, game2 = 50, game3 = 10, game4 = 5,total = 0;
         public GameLobby()
         {
             InitializeComponent();
-            total = game1 + game2 + game3 + game4;
+            total= game1+ game2 + game3 + game4;
             LblResultado.Text = total.ToString();
+            GM1.Text = game1.ToString();
+            GM2.Text = game2.ToString();
+            GM3.Text = game3.ToString();
+            GM4.Text = game4.ToString();
         }
+
+        #region Banco
         private static SQLiteConnection sqliteConnection;
         private static SQLiteConnection DbConnection()
         {
@@ -28,6 +36,13 @@ namespace Game_Center.Games
             sqliteConnection.Open();
             return sqliteConnection;
         }
+
+        private void GameLobby_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ClassSong song = new();
+            song.StopSong();
+        }
+
 
         public static DataTable GetCliente(int id)
         {
@@ -48,14 +63,14 @@ namespace Game_Center.Games
                 throw;
             }
         }
-        Double Res=0;
 
-        private void textBox2_Leave(object sender, EventArgs e)
+     
+        private void button1_Click(object sender, EventArgs e)
         {
-            double Valor1 = Convert.ToDouble(textBox1.Text);
-            double Valor2 = Convert.ToDouble(textBox2.Text);
-            Res = Valor1 + Valor2;
-            resultado.Text = Res.ToString();
+            ConnectDB connect = new();
+            connect.Update();
         }
+
+        #endregion
     }
 }
