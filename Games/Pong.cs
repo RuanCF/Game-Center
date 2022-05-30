@@ -14,7 +14,7 @@ namespace Game_Center.Games
     {
         bool cima;
         bool baixo;
-        int velocidade = 7;
+        int velocidade = 8;
         double bolax = 5;
         double bolay = 5;
         int score = 0;
