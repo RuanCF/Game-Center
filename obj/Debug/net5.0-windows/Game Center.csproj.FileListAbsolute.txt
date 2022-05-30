@@ -227,7 +227,6 @@ C:\Users\User\Desktop\Nova pasta\Game-Center\bin\Debug\net5.0-windows\runtimes\w
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game Center.csproj.AssemblyReference.cache
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.GameLobby.resources
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.MenuPong.resources
-C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong.resources
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game_Center.HomeScreen.resources
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game_Center.Home.LobbyScreen.resources
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game_Center.Screens.LoginScreen.resources
@@ -244,3 +243,5 @@ C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game Cente
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\ref\Game Center.dll
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game Center.pdb
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game Center.genruntimeconfig.cache
+C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong1Player.resources
+C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong.Pong2Players.resources
