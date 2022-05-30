@@ -99,6 +99,7 @@ namespace Game_Center.Games
                 bolax = -bolax;
                 bolax -= 1.5;
                 cpuPoint++;
+                scoreCPU.Text = cpuPoint.ToString();
             }
 
 
@@ -109,8 +110,8 @@ namespace Game_Center.Games
                 ball.Left = 434;
                 bolax = -bolax;
                 bolax += 1.5;
-
                 score++;
+                scorePlayer.Text = score.ToString();
             }
 
 
