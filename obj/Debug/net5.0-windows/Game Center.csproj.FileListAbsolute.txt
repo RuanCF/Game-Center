@@ -190,7 +190,6 @@ C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Spel
 C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Base.dll
 C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Windows.dll
 C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.MenuPong.resources
-C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong.resources
 C:\Users\User\Desktop\Nova pasta\Game-Center\bin\Debug\net5.0-windows\Game Center.exe
 C:\Users\User\Desktop\Nova pasta\Game-Center\bin\Debug\net5.0-windows\Game Center.deps.json
 C:\Users\User\Desktop\Nova pasta\Game-Center\bin\Debug\net5.0-windows\Game Center.runtimeconfig.json
@@ -245,3 +244,8 @@ C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game Cente
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game Center.genruntimeconfig.cache
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong1Player.resources
 C:\Users\User\Desktop\Nova pasta\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong.Pong2Players.resources
+C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong1Player.resources
+C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong.Pong2Players.resources
+C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.FlappyBird.FlappyBird1.resources
+C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.FlappyBird.FlappyBird.resources
+C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Jogo_da_velha.JogoDaVelha.resources
