@@ -149,17 +149,45 @@ namespace Game_Center.Games
             {
                 timer1.Stop();
 
-                DialogResult dr = MessageBox.Show("Você venceu! Deseja salvar o placar?", "", MessageBoxButtons.YesNo);
+                DialogResult dr = MessageBox.Show("Você venceu! Deseja reiniciar?", "", MessageBoxButtons.YesNo);
                 if (dr == DialogResult.Yes)
                 {
-                    Application.Restart();
+                    timer1.Start();
+                    score= 0;
+                    cpuPoint = 0;
+                    scorePlayer.Text = score.ToString();
+                    scoreCPU.Text = cpuPoint.ToString();
+                    bolax = 5;
+                    bolay = 5;
+                }
+                else
+                {
+                    MenuPong menuPong = new MenuPong();
+                    this.Hide();
+                    menuPong.Show();
                 }
             }
 
             if (cpuPoint > 6)
             {
               timer1.Stop();
-                MessageBox.Show("CPU wins, you lose");
+                DialogResult dr = MessageBox.Show(" CPU venceu! Deseja reiniciar?:","", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes)
+                {
+                    timer1.Start();
+                    score = 0;
+                    cpuPoint = 0;
+                    scorePlayer.Text = score.ToString();
+                    scoreCPU.Text = cpuPoint.ToString();
+                    bolax = 5;
+                    bolay = 5;
+                }
+                else
+                {
+                    MenuPong menuPong = new MenuPong();
+                    this.Hide();
+                    menuPong.Show();    
+                }
             }
         }
     }

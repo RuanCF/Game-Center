@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
 using Game_Center.Games;
+using Game_Center.Games.FlappyBird;
 
 namespace Game_Center.Home
 {
@@ -105,6 +106,13 @@ namespace Game_Center.Home
             MenuPong menuPong = new();
             this.Hide();
             menuPong.ShowDialog();
+        }
+
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+            FlappyBird form = new();
+            this.Hide();
+            form.ShowDialog();
         }
     }
 }

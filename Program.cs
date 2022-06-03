@@ -1,4 +1,6 @@
 using Game_Center.Games;
+using Game_Center.Games.FlappyBird;
+using Game_Center.Games.Jogo_da_velha;
 using Game_Center.Home;
 using Game_Center.Screens;
 using Game_Center.Song;
@@ -21,7 +23,7 @@ namespace Game_Center
             Application.SetCompatibleTextRenderingDefault(false);
             ClassSong Song = new();
             Song.PlaySong();
-            Application.Run(new LobbyScreen()); //Tela q inicia o projeto!!!
+            Application.Run(new JogoDaVelha()); //Tela q inicia o projeto!!!
         }
     }
 }

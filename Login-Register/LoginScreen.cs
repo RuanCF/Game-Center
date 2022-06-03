@@ -6,18 +6,19 @@ using System.Windows.Forms;
 using Game_Center.Home;
 using Game_Center.Song;
 using System.Data.SQLite;
+using Game_Center.Games;
 
 namespace Game_Center.Screens
 {
     public partial class LoginScreen : Form
     {
+        public string txtnome;
         #region Declarações
         private readonly string dbcon = @"Data Source=UserCenter.sdb";
         #endregion
         public LoginScreen()
         {
             InitializeComponent();
-
         }
         #region Eventos
         private void LoginScreen_Load(object sender, EventArgs e)

@@ -1,0 +1,7 @@
+﻿bugs
+bola entrando dentro da barra do player
+
+correção
+Expandir campo
+Diminuir barra
+Sprintes gerais

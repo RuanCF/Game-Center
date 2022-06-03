@@ -35,6 +35,7 @@ namespace Game_Center.Games
             this.GM2 = new System.Windows.Forms.Label();
             this.GM3 = new System.Windows.Forms.Label();
             this.GM4 = new System.Windows.Forms.Label();
+            this.lbname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LblResultado
@@ -92,11 +93,21 @@ namespace Game_Center.Games
             this.GM4.TabIndex = 11;
             this.GM4.Text = "Game4";
             // 
+            // lbname
+            // 
+            this.lbname.AutoSize = true;
+            this.lbname.Location = new System.Drawing.Point(602, 201);
+            this.lbname.Name = "lbname";
+            this.lbname.Size = new System.Drawing.Size(31, 15);
+            this.lbname.TabIndex = 12;
+            this.lbname.Text = "Nick";
+            // 
             // GameLobby
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbname);
             this.Controls.Add(this.GM4);
             this.Controls.Add(this.GM3);
             this.Controls.Add(this.GM2);
@@ -118,5 +129,6 @@ namespace Game_Center.Games
         private System.Windows.Forms.Label GM2;
         private System.Windows.Forms.Label GM3;
         private System.Windows.Forms.Label GM4;
+        private System.Windows.Forms.Label lbname;
     }
 }

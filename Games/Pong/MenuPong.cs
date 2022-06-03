@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Game_Center.Song;
+using Game_Center.Games.Pong;
 
 namespace Game_Center.Games
 {
     public partial class MenuPong : Form
     {
+        public int total;
         public MenuPong()
         {
             InitializeComponent();
@@ -27,6 +29,9 @@ namespace Game_Center.Games
 
         private void button3_Click(object sender, EventArgs e)
         {
+            ConnectDB cb = new();
+            cb.Update();
+
             HomeScreen home = new();
             this.Hide();
             home.ShowDialog();
@@ -53,6 +58,8 @@ namespace Game_Center.Games
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Pong2Players pong2 = new();
+            
             Pong.Pong2Players pongame = new();
             this.Hide();
             pongame.ShowDialog();

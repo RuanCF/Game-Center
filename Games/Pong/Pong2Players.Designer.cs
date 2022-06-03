@@ -44,7 +44,7 @@ namespace Game_Center.Games.Pong
             // player1
             // 
             this.player1.BackColor = System.Drawing.Color.White;
-            this.player1.Location = new System.Drawing.Point(53, 162);
+            this.player1.Location = new System.Drawing.Point(755, 162);
             this.player1.Name = "player1";
             this.player1.Size = new System.Drawing.Size(26, 146);
             this.player1.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace Game_Center.Games.Pong
             // player2
             // 
             this.player2.BackColor = System.Drawing.Color.White;
-            this.player2.Location = new System.Drawing.Point(756, 162);
+            this.player2.Location = new System.Drawing.Point(60, 162);
             this.player2.Name = "player2";
             this.player2.Size = new System.Drawing.Size(26, 146);
             this.player2.TabIndex = 3;
@@ -71,22 +71,22 @@ namespace Game_Center.Games.Pong
             // scorePlayer
             // 
             this.scorePlayer.AutoSize = true;
-            this.scorePlayer.Font = new System.Drawing.Font("Russo One", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.scorePlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.scorePlayer.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.scorePlayer.Location = new System.Drawing.Point(238, 66);
+            this.scorePlayer.Location = new System.Drawing.Point(588, 66);
             this.scorePlayer.Name = "scorePlayer";
-            this.scorePlayer.Size = new System.Drawing.Size(27, 25);
+            this.scorePlayer.Size = new System.Drawing.Size(25, 25);
             this.scorePlayer.TabIndex = 4;
             this.scorePlayer.Text = "0";
             // 
             // scorePlayer2
             // 
             this.scorePlayer2.AutoSize = true;
-            this.scorePlayer2.Font = new System.Drawing.Font("Russo One", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.scorePlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.scorePlayer2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.scorePlayer2.Location = new System.Drawing.Point(536, 66);
+            this.scorePlayer2.Location = new System.Drawing.Point(218, 66);
             this.scorePlayer2.Name = "scorePlayer2";
-            this.scorePlayer2.Size = new System.Drawing.Size(27, 25);
+            this.scorePlayer2.Size = new System.Drawing.Size(25, 25);
             this.scorePlayer2.TabIndex = 5;
             this.scorePlayer2.Text = "0";
             // 
@@ -109,6 +109,8 @@ namespace Game_Center.Games.Pong
             this.Controls.Add(this.player1);
             this.Name = "Pong2Players";
             this.Text = "Pong2Players";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Pong2Players_FormClosed);
+            this.Load += new System.EventHandler(this.Pong2Players_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Pong2Players_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Pong2Players_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.player1)).EndInit();

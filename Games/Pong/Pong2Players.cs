@@ -19,7 +19,7 @@ namespace Game_Center.Games.Pong
         
         int scoreP1 = 0;
         int scoreP2 = 0;
-        public int gamePongScore = 0;
+        public int gamePongScore;
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -29,25 +29,22 @@ namespace Game_Center.Games.Pong
 
             if (ball.Left < 0)
             {
-
                 ball.Left = 434;
                 bolax = -bolax;
                 bolax -= 1.5;
-                scoreP2++;
-                scorePlayer2.Text = scoreP2.ToString();
-            }
-            if (ball.Left + ball.Width > ClientSize.Width)
-            {
-
-                ball.Left = 434;
-                bolax = -bolax;
-                bolax += 1.5;
                 scoreP1++;
                 scorePlayer.Text = scoreP1.ToString();
             }
+            if (ball.Left + ball.Width > ClientSize.Width)
+            {
+                ball.Left = 434;
+                bolax = -bolax;
+                bolax += 1.5;
+                scoreP2++;
+                scorePlayer2.Text = scoreP2.ToString();
+            }
             if (ball.Top < 0 || ball.Top + ball.Height > ClientSize.Height)
             {
-
                 bolay = -bolay;
             }
 
@@ -55,35 +52,36 @@ namespace Game_Center.Games.Pong
 
             if (ball.Bounds.IntersectsWith(player1.Bounds) || ball.Bounds.IntersectsWith(player2.Bounds))
             {
-
-                bolax = -bolax;
+                bolax = -bolax;               
             }
             if (p1cima == true && player1.Top > 0)
             {
-
                 player1.Top -= 8;
             }
-
-
             if (p1baixo == true && player1.Top < 455)
             {
-
                 player1.Top += 8;
             }
+
+
+
             if (p2cima == true && player2.Top > 0)
             {
 
                 player2.Top -= 8;
             }
-
-
             if (p2baixo == true && player2.Top < 455)
             {
 
                 player2.Top += 8;
             }
-            if (scoreP1> 6)
+
+
+
+
+            if (scoreP1 > 6)
             {
+                gamePongScore += 50;
                 timer1.Stop();
 
                 DialogResult dr = MessageBox.Show("Jogador 1 Venceu,Deseja Repetir ?", "" , MessageBoxButtons.YesNo);
@@ -96,13 +94,21 @@ namespace Game_Center.Games.Pong
                     scorePlayer2.Text = scoreP2.ToString();
                     bolax = 5;
                      bolay = 5;
-                    gamePongScore = gamePongScore + 50;
+
+                }
+                else
+                {
+                    MenuPong menuPong = new();
+                    this.Hide();
+                    menuPong.ShowDialog();
                 }
                
             }
 
             if (scoreP2 > 6)
             {
+                gamePongScore += 50;
+
                 timer1.Stop();
                 DialogResult dr = MessageBox.Show("Jogador 2 Venceu,Deseja Repetir ?", "", MessageBoxButtons.YesNo);
                 if (dr == DialogResult.Yes)
@@ -114,11 +120,30 @@ namespace Game_Center.Games.Pong
                     scorePlayer2.Text = scoreP2.ToString();
                     bolax = 5;
                     bolay = 5;
-                    gamePongScore = gamePongScore + 50;
+
+                }
+                else
+                {
+                    MenuPong menuPong = new();
+                    this.Hide();
+                    menuPong.ShowDialog();
                 }
 
             }
 
+        }
+
+        private void Pong2Players_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pong2Players_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            gamePongScore += gamePongScore;
+            this.Hide();
+            MenuPong menu = new();
+            menu.ShowDialog();
         }
 
         private void Pong2Players_KeyUp(object sender, KeyEventArgs e)
