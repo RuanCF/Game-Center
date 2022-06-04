@@ -10,7 +10,7 @@
     <Compile Update="Games\GameLobby.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Games\Jogo da velha\JogoDaVelha.cs">
+    <Compile Update="Games\Velha\JogoDaVelha.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Games\Pong\MenuPong.cs">

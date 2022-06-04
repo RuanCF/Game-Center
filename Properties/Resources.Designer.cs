@@ -93,6 +93,16 @@ namespace Game_Center.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flappy_bird {
+            get {
+                object obj = ResourceManager.GetObject("flappy-bird", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ground {
             get {
                 object obj = ResourceManager.GetObject("ground", resourceCulture);
@@ -156,6 +166,16 @@ namespace Game_Center.Properties {
         internal static System.Drawing.Bitmap titanfall_imc_soldiers_bluepoint_games_wallpaper {
             get {
                 object obj = ResourceManager.GetObject("titanfall-imc-soldiers-bluepoint-games-wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap velha {
+            get {
+                object obj = ResourceManager.GetObject("velha", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

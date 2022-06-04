@@ -23,7 +23,7 @@ namespace Game_Center
             Application.SetCompatibleTextRenderingDefault(false);
             ClassSong Song = new();
             Song.PlaySong();
-            Application.Run(new JogoDaVelha()); //Tela q inicia o projeto!!!
+            Application.Run(new LobbyScreen()); //Tela q inicia o projeto!!!
         }
     }
 }
