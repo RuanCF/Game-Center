@@ -91,7 +91,6 @@ C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\runtimes\wi
 C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
 C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.TestScreen.resources
 C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Game Center.exe
 C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Game Center.deps.json
 C:\Users\ruan-\Documents\C#\Game-Center\bin\Debug\net5.0-windows\Game Center.runtimeconfig.json
@@ -249,3 +248,15 @@ C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Gam
 C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.FlappyBird.FlappyBird1.resources
 C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.FlappyBird.FlappyBird.resources
 C:\Users\ruan-\Documents\C#\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Jogo_da_velha.JogoDaVelha.resources
+C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Grid.Windows.dll
+C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Licensing.dll
+C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Shared.Base.dll
+C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Shared.Windows.dll
+C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\Syncfusion.SpellChecker.Base.dll
+C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Base.dll
+C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Windows.dll
+C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.FlappyBird.FlappyBird.resources
+C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.FlappyBird.FlappyBird1.resources
+C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.MenuPong.resources
+C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong.Pong2Players.resources
+C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Jogo_da_velha.JogoDaVelha.resources
