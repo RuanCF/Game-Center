@@ -18,17 +18,17 @@ namespace Game_Center.Games
 {
     public partial class GameLobby : Form
     {
-        public int game1 = 100, game2 = 50, game3 = 10, game4 = 5,total;
+        public int game1 = 100, game2 = 50, game3 = 10, game4 = 5;
+        //public int total = 0; 
         public string txtNome;
         public GameLobby()
         {
             InitializeComponent();
             LoginScreen ls = new();
             lbname.Text = txtNome;
-
             Pong2Players pong2 = new();
-            total = pong2.gamePongScore;
-            LblResultado.Text = total.ToString();
+            //total = game1 + game2 + game3;
+            //LblResultado.Text = total.ToString();
             GM2.Text = game2.ToString();
             GM3.Text = game3.ToString();
             GM4.Text = game4.ToString();
@@ -42,6 +42,7 @@ namespace Game_Center.Games
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //total = game1 + game2 + game3;
             ConnectDB connect = new();
             connect.Update();
         }

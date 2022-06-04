@@ -8,11 +8,13 @@ using Game_Center;
 using Game_Center.Games.Pong;
 using Game_Center.Games;
 
+
 namespace Game_Center
 {
     class ConnectDB
     {
         int score;
+        int total = 100;
         Pong2Players pong2 = new();
         #region Declaração
         public SQLiteConnection conn = new("Data Source=UserCenter.sdb");
@@ -30,27 +32,28 @@ namespace Game_Center
 
         public void Update()
         {
-            int total = 100;
-            score += total;
+            //GameLobby gl = new();
+            //score += total;
             conn.Open();
+            score += total;
             SQLiteCommand comm = new(conn);
             {
-                comm.CommandText = "SELECT NickName FROM UserData";
+                comm.CommandText = "SELECT * FROM UserData";
                 var UserDataId = comm.ExecuteScalar();
-                if (UserDataId != null && UserDataId != DBNull.Value)
+                if (UserDataId != null /*&& UserDataId != DBNull.Value*/)
                 {
-                    comm.CommandText = "UPDATE UserData SET Score = '" + score + "' WHERE NickName = @NickName";
-                    comm.Parameters.AddWithValue("@NickName", UserDataId);
+                    comm.CommandText = "UPDATE UserData SET Score = " + score + " WHERE Id = @Id";
+                    comm.Parameters.AddWithValue("@Id", UserDataId);
                     comm.ExecuteNonQuery();
                 }
             }
         }
     }
-}
-        
+}//comm.CommandText = "UPDATE UserData SET Score = '" + score + "' WHERE Id = @Id";
 
-    
-    
-   
-    
+
+
+
+
+
 

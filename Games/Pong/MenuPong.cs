@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Game_Center.Song;
 using Game_Center.Games.Pong;
+using Game_Center.Home;
 
 namespace Game_Center.Games
 {
@@ -18,13 +19,6 @@ namespace Game_Center.Games
         public MenuPong()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Pong1Player pongame = new();
-            this.Hide();
-            pongame.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -45,15 +39,10 @@ namespace Game_Center.Games
 
         private void MenuPong_FormClosed(object sender, FormClosedEventArgs e)
         {
-            HomeScreen home = new();
+            LobbyScreen Lobby = new();
             this.Hide();
-            home.ShowDialog();
+            Lobby.ShowDialog();
             
-        }
-
-        private void MenuPong_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button4_Click(object sender, EventArgs e)

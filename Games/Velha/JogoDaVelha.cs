@@ -73,7 +73,6 @@ namespace Game_Center.Games.Jogo_da_velha
                 }
             }
             AImoves.Stop();
-
             loadbuttons();
         }
 

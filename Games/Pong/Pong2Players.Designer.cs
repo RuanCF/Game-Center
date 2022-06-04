@@ -36,6 +36,7 @@ namespace Game_Center.Games.Pong
             this.scorePlayer = new System.Windows.Forms.Label();
             this.scorePlayer2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.BtClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player2)).BeginInit();
@@ -58,6 +59,7 @@ namespace Game_Center.Games.Pong
             this.ball.Size = new System.Drawing.Size(26, 29);
             this.ball.TabIndex = 2;
             this.ball.TabStop = false;
+            this.ball.Click += new System.EventHandler(this.ball_Click);
             // 
             // player2
             // 
@@ -96,12 +98,23 @@ namespace Game_Center.Games.Pong
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // BtClose
+            // 
+            this.BtClose.Location = new System.Drawing.Point(755, 23);
+            this.BtClose.Name = "BtClose";
+            this.BtClose.Size = new System.Drawing.Size(75, 23);
+            this.BtClose.TabIndex = 6;
+            this.BtClose.Text = "Close";
+            this.BtClose.UseVisualStyleBackColor = true;
+            this.BtClose.Click += new System.EventHandler(this.BtClose_Click);
+            // 
             // Pong2Players
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(856, 499);
+            this.Controls.Add(this.BtClose);
             this.Controls.Add(this.scorePlayer2);
             this.Controls.Add(this.scorePlayer);
             this.Controls.Add(this.player2);
@@ -129,5 +142,6 @@ namespace Game_Center.Games.Pong
         private System.Windows.Forms.Label scorePlayer;
         private System.Windows.Forms.Label scorePlayer2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button BtClose;
     }
 }

@@ -81,7 +81,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnLogar.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
     <value>892, 12</value>
@@ -105,7 +105,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
+  </data>
+  <data name="btnRegister.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="btnRegister.Location" type="System.Drawing.Point, System.Drawing">
     <value>501, 466</value>
@@ -129,7 +132,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnRegister.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -157,7 +160,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="BtnStop.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 11</value>
@@ -181,13 +184,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BtnStop.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="BtnPassLobby.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BtnPassLobby.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 389</value>
+    <value>12, 466</value>
   </data>
   <data name="BtnPassLobby.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 26</value>
@@ -208,33 +211,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BtnPassLobby.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="BtnPassGame.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BtnPassGame.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 421</value>
-  </data>
-  <data name="BtnPassGame.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 26</value>
-  </data>
-  <data name="BtnPassGame.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="BtnPassGame.Text" xml:space="preserve">
-    <value>Entrar GameLobby</value>
-  </data>
-  <data name="&gt;&gt;BtnPassGame.Name" xml:space="preserve">
-    <value>BtnPassGame</value>
-  </data>
-  <data name="&gt;&gt;BtnPassGame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BtnPassGame.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BtnPassGame.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

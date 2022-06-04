@@ -96,6 +96,7 @@ namespace Game_Center.Screens
             this.BtnRegister.AccessibleName = "";
             this.BtnRegister.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnRegister.Enabled = false;
             this.BtnRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnRegister.Location = new System.Drawing.Point(65, 335);
             this.BtnRegister.Name = "BtnRegister";

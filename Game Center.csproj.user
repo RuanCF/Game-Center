@@ -16,9 +16,6 @@
     <Compile Update="Games\Pong\MenuPong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Games\Pong\Pong1Player.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Games\Pong\Pong2Players.cs">
       <SubType>Form</SubType>
     </Compile>

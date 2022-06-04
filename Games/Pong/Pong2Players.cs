@@ -146,6 +146,19 @@ namespace Game_Center.Games.Pong
             menu.ShowDialog();
         }
 
+        private void ball_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtClose_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuPong f = new();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
         private void Pong2Players_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Up)
@@ -173,6 +186,7 @@ namespace Game_Center.Games.Pong
         public Pong2Players()
         {
             InitializeComponent();
+            timer1.Enabled=false;
         }
 
         private void Pong2Players_KeyDown(object sender, KeyEventArgs e)

@@ -55,12 +55,5 @@ namespace Game_Center
             this.Hide();
             lobby.ShowDialog();
         }
-
-        private void BtnPassGame_Click(object sender, System.EventArgs e)
-        {
-            GameLobby game = new();
-            this.Hide();
-            game.ShowDialog();
-        }
     }
 }
