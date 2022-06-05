@@ -260,3 +260,59 @@ C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center
 C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.MenuPong.resources
 C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong.Pong2Players.resources
 C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Jogo_da_velha.JogoDaVelha.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Game Center.exe
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Game Center.deps.json
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Game Center.runtimeconfig.json
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Game Center.runtimeconfig.dev.json
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Game Center.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\ref\Game Center.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Game Center.pdb
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\EntityFramework.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\MaterialSkin.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\System.Data.SQLite.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Grid.Windows.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Licensing.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Shared.Base.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Shared.Windows.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Syncfusion.SpellChecker.Base.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Base.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Windows.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\System.Data.SQLite.EF6.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\linux-x64\native\libsqlite3.so
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\win7-x64\native\sqlite3.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\win7-x86\native\sqlite3.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.FlappyBird.FlappyBird.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.FlappyBird.FlappyBird1.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.GameLobby.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.MenuPong.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong.Pong2Players.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Jogo_da_velha.JogoDaVelha.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.HomeScreen.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Home.LobbyScreen.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Screens.LoginScreen.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Screens.RegisterScreen.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Properties.Resources.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game_Center.Song.ConfigSong.resources
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.AssemblyInfo.cs
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.csproj.CopyComplete
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\ref\Game Center.dll
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.pdb
+C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.genruntimeconfig.cache

@@ -13,6 +13,7 @@ using Game_Center.Games;
 using Game_Center.Games.FlappyBird;
 using Game_Center.Properties;
 using Game_Center.Games.Jogo_da_velha;
+using Game_Center.Games.Pong;
 
 namespace Game_Center.Home
 {
@@ -59,8 +60,10 @@ namespace Game_Center.Home
 
         private void PictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            HomeScreen home = new();
-            home.ShowDialog();
+            this.Hide();
+            HomeScreen f = new HomeScreen();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
         private void ButtonAdv1_DoubleClick(object sender, EventArgs e)
@@ -114,30 +117,39 @@ namespace Game_Center.Home
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            GameLobby Game = new();
             this.Hide();
-            Game.ShowDialog();
+            GameLobby f = new GameLobby();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+            
+            
         }
 
         private void BoxPong_DoubleClick(object sender, EventArgs e)
         {
-            MenuPong menuPong = new();
             this.Hide();
-            menuPong.ShowDialog();
+            Pong2Players f = new Pong2Players();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
         private void BoxFlappy_DoubleClick(object sender, EventArgs e)
         {
-            FlappyBird form = new();
             this.Hide();
-            form.ShowDialog();
+            FlappyBird f = new();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+            
+            
         }
 
         private void BoxVelha_DoubleClick(object sender, EventArgs e)
         {
-            JogoDaVelha velha = new();
             this.Hide();
-            velha.ShowDialog();
+            JogoDaVelha f = new();
+            this.Hide();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

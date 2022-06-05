@@ -22,15 +22,18 @@ namespace Game_Center
 
         private void BtnLogar_Click(object sender, System.EventArgs e)
         {
-            LoginScreen Login = new();
+            LoginScreen f = new();
             this.Hide();
-            Login.ShowDialog();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+            
         }
         private void BtnRegister_Click(object sender, System.EventArgs e)
         {
-            RegisterScreen Register = new();
+            RegisterScreen f = new();
             this.Hide();
-            Register.ShowDialog();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
 
         private void BtnExit_Click(object sender, System.EventArgs e)
@@ -51,9 +54,10 @@ namespace Game_Center
 
         private void BtnPassLobby_Click(object sender, System.EventArgs e)
         {
-            LobbyScreen lobby = new();
+            LobbyScreen f = new();
             this.Hide();
-            lobby.ShowDialog();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
         }
     }
 }

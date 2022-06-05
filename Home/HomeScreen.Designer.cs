@@ -30,22 +30,12 @@ namespace Game_Center
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeScreen));
-            this.btnLogar = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnStop = new System.Windows.Forms.Button();
             this.BtnPassLobby = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnLogar
-            // 
-            this.btnLogar.BackColor = System.Drawing.Color.Snow;
-            resources.ApplyResources(this.btnLogar, "btnLogar");
-            this.btnLogar.Name = "btnLogar";
-            this.btnLogar.UseVisualStyleBackColor = false;
-            this.btnLogar.Click += new System.EventHandler(this.BtnLogar_Click);
             // 
             // btnExit
             // 
@@ -54,14 +44,6 @@ namespace Game_Center
             this.btnExit.Name = "btnExit";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.BackColor = System.Drawing.Color.Snow;
-            resources.ApplyResources(this.btnRegister, "btnRegister");
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // pictureBox1
             // 
@@ -93,9 +75,7 @@ namespace Game_Center
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.BtnPassLobby);
             this.Controls.Add(this.BtnStop);
-            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnLogar);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -110,10 +90,7 @@ namespace Game_Center
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnLogar;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnStop;
         private System.Windows.Forms.Button BtnPassLobby;
