@@ -121,8 +121,17 @@
   <data name="titanfall-imc-soldiers-bluepoint-games-wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\titanfall-imc-soldiers-bluepoint-games-wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="flappy-bird" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flappy-bird.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtStart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pipedown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pipedown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wallpaper1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wallpaper1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clouds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,13 +163,16 @@
   <data name="1454745043738447911" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1454745043738447911.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="memoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\memoria.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wallpaperflare.com_wallpaper (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\wallpaperflare.com_wallpaper (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Wellcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\Wellcome.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Wellcome.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flappy-bird" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flappy-bird.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -26,9 +26,9 @@ namespace Game_Center.Games
             ConnectDB cb = new();
             cb.Update();
 
-            HomeScreen home = new();
+            LobbyScreen LS = new();
             this.Hide();
-            home.ShowDialog();
+            LS.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

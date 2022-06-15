@@ -33,13 +33,13 @@ namespace Game_Center
             this.btnExit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnStop = new System.Windows.Forms.Button();
-            this.BtnPassLobby = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.btnExit, "btnExit");
             this.btnExit.Name = "btnExit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -51,6 +51,7 @@ namespace Game_Center
             this.pictureBox1.Image = global::Game_Center.Properties.Resources.Wellcome;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // BtnStop
             // 
@@ -60,25 +61,25 @@ namespace Game_Center
             this.BtnStop.UseVisualStyleBackColor = false;
             this.BtnStop.Click += new System.EventHandler(this.BtnStop_Click);
             // 
-            // BtnPassLobby
+            // button1
             // 
-            this.BtnPassLobby.BackColor = System.Drawing.Color.Snow;
-            resources.ApplyResources(this.BtnPassLobby, "BtnPassLobby");
-            this.BtnPassLobby.Name = "BtnPassLobby";
-            this.BtnPassLobby.UseVisualStyleBackColor = false;
-            this.BtnPassLobby.Click += new System.EventHandler(this.BtnPassLobby_Click);
+            this.button1.BackColor = System.Drawing.Color.Snow;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // HomeScreen
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.BtnPassLobby);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnStop);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "HomeScreen";
             this.TopMost = true;
@@ -93,7 +94,8 @@ namespace Game_Center
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnStop;
-        private System.Windows.Forms.Button BtnPassLobby;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

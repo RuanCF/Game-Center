@@ -30,6 +30,7 @@ namespace Game_Center.Games.Pong
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pong2Players));
             this.player1 = new System.Windows.Forms.PictureBox();
             this.ball = new System.Windows.Forms.PictureBox();
             this.player2 = new System.Windows.Forms.PictureBox();
@@ -45,7 +46,7 @@ namespace Game_Center.Games.Pong
             // player1
             // 
             this.player1.BackColor = System.Drawing.Color.White;
-            this.player1.Location = new System.Drawing.Point(755, 162);
+            this.player1.Location = new System.Drawing.Point(1226, 162);
             this.player1.Name = "player1";
             this.player1.Size = new System.Drawing.Size(26, 146);
             this.player1.TabIndex = 1;
@@ -54,17 +55,16 @@ namespace Game_Center.Games.Pong
             // ball
             // 
             this.ball.BackColor = System.Drawing.Color.White;
-            this.ball.Location = new System.Drawing.Point(372, 201);
+            this.ball.Location = new System.Drawing.Point(635, 229);
             this.ball.Name = "ball";
             this.ball.Size = new System.Drawing.Size(26, 29);
             this.ball.TabIndex = 2;
             this.ball.TabStop = false;
-            this.ball.Click += new System.EventHandler(this.ball_Click);
             // 
             // player2
             // 
             this.player2.BackColor = System.Drawing.Color.White;
-            this.player2.Location = new System.Drawing.Point(60, 162);
+            this.player2.Location = new System.Drawing.Point(12, 162);
             this.player2.Name = "player2";
             this.player2.Size = new System.Drawing.Size(26, 146);
             this.player2.TabIndex = 3;
@@ -73,9 +73,10 @@ namespace Game_Center.Games.Pong
             // scorePlayer
             // 
             this.scorePlayer.AutoSize = true;
+            this.scorePlayer.BackColor = System.Drawing.Color.Transparent;
             this.scorePlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.scorePlayer.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.scorePlayer.Location = new System.Drawing.Point(588, 66);
+            this.scorePlayer.ForeColor = System.Drawing.Color.Red;
+            this.scorePlayer.Location = new System.Drawing.Point(1042, 66);
             this.scorePlayer.Name = "scorePlayer";
             this.scorePlayer.Size = new System.Drawing.Size(25, 25);
             this.scorePlayer.TabIndex = 4;
@@ -84,8 +85,9 @@ namespace Game_Center.Games.Pong
             // scorePlayer2
             // 
             this.scorePlayer2.AutoSize = true;
+            this.scorePlayer2.BackColor = System.Drawing.Color.Transparent;
             this.scorePlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.scorePlayer2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.scorePlayer2.ForeColor = System.Drawing.Color.Red;
             this.scorePlayer2.Location = new System.Drawing.Point(218, 66);
             this.scorePlayer2.Name = "scorePlayer2";
             this.scorePlayer2.Size = new System.Drawing.Size(25, 25);
@@ -100,29 +102,33 @@ namespace Game_Center.Games.Pong
             // 
             // BtClose
             // 
-            this.BtClose.Location = new System.Drawing.Point(755, 23);
+            this.BtClose.Font = new System.Drawing.Font("Alagard", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.BtClose.Location = new System.Drawing.Point(1177, 646);
             this.BtClose.Name = "BtClose";
             this.BtClose.Size = new System.Drawing.Size(75, 23);
             this.BtClose.TabIndex = 6;
-            this.BtClose.Text = "Close";
+            this.BtClose.Text = "Sair";
             this.BtClose.UseVisualStyleBackColor = true;
-            this.BtClose.Click += new System.EventHandler(this.BtClose_Click);
             // 
             // Pong2Players
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(856, 499);
+            this.BackgroundImage = global::Game_Center.Properties.Resources.pong;
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.BtClose);
             this.Controls.Add(this.scorePlayer2);
             this.Controls.Add(this.scorePlayer);
             this.Controls.Add(this.player2);
             this.Controls.Add(this.ball);
             this.Controls.Add(this.player1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pong2Players";
-            this.Text = "Pong2Players";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Pong2Players_FormClosed);
+            this.Text = "Pong";
+            this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Pong2Players_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Pong2Players_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Pong2Players_KeyUp);

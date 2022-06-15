@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Game_Center.Home;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -30,13 +31,10 @@ namespace Game_Center.Games.FlappyBird
             clouds1.Left -= cloudSpeed;
             scoreText.Text = "Score: " + score;
 
-            // respawn clouds 
-
             if (clouds1.Left < -200)
             {
                 cloudCount++;
                 clouds1.Left = 950;
-                // set random vertical position for clouds
                 if (cloudCount % 2 == 0)
                 {
                     clouds1.Top = randomNum.Next(158, 386);
@@ -47,7 +45,6 @@ namespace Game_Center.Games.FlappyBird
                 }
             }
 
-            // move pipes to the left during timmer operation
             if (pipeBottom.Left < -150)
             {
                 pipeBottom.Left = randomNum.Next(650, 950);
@@ -56,7 +53,6 @@ namespace Game_Center.Games.FlappyBird
 
             if (pipeTop.Left < -150)
             {
-                // set random distance for pipe spawn
                 pipeTop.Left = randomNum.Next(650, 950);
                 score++;
                 count++;
@@ -71,7 +67,6 @@ namespace Game_Center.Games.FlappyBird
                 //}
 
             }
-            // increase difficulty 
             if (score > 5 && score <= 10)
             {
                 pipeSpeed = 8;
@@ -82,14 +77,13 @@ namespace Game_Center.Games.FlappyBird
                 pipeSpeed = 10;
             }
 
-            // Collision detection 
             if (bird.Bounds.IntersectsWith(pipeBottom.Bounds) ||
                 bird.Bounds.IntersectsWith(pipeTop.Bounds) ||
                 bird.Bounds.IntersectsWith(ground.Bounds) ||
                 bird.Top < -25)
 
             {
-                bird.Image.RotateFlip(RotateFlipType.Rotate180FlipNone);
+                //bird.Image.RotateFlip(RotateFlipType.Rotate180FlipNone);
                 EndGame();
             }
 
@@ -102,9 +96,7 @@ namespace Game_Center.Games.FlappyBird
         {
             if (e.KeyCode == Keys.Space)
             {
-                //When key is down gravity greater
                 gravity = -20;
-                //Suppress Key 'Ding' 
                 e.Handled = true;
                 e.SuppressKeyPress = true;
 
@@ -115,7 +107,6 @@ namespace Game_Center.Games.FlappyBird
         {
             if (e.KeyCode == Keys.Space)
             {
-                //When space key is up Gravity lessons
                 gravity = 5;
             }
         }
@@ -127,17 +118,14 @@ namespace Game_Center.Games.FlappyBird
         {
             GameTimer.Stop();
             scoreText.Text += " Game Over!!!";
-            //Enable restart button
             restartButton.Visible = true;
             restartButton.Enabled = true;
-            //stopPlayingMusic();
         }
         #endregion
 
         #region Restart
         private void RestartButton_Click(object sender, EventArgs e)
         {
-            //Reset the game when clicked 
             pipeSpeed = 6;
             gravity = 5;
             score = 0;
@@ -149,10 +137,15 @@ namespace Game_Center.Games.FlappyBird
             clouds1.Location = new Point(198, 115);
             restartButton.Visible = false;
             restartButton.Enabled = false;
-            //playBackgroundMusic();
             GameTimer.Start();
-
         }
         #endregion
+
+        private void BtnRegister_Click(object sender, EventArgs e)
+        {
+            LobbyScreen lb = new();
+            this.Hide();
+            lb.ShowDialog();
+        }
     }
 }

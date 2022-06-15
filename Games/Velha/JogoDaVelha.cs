@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Game_Center.Home;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -109,6 +110,13 @@ namespace Game_Center.Games.Jogo_da_velha
                 label2.Text = "AI Wins- " + computerWins; 
                 resetGame(); 
             }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            LobbyScreen LS = new();
+            this.Hide();
+            LS.Show();
         }
     }
 }

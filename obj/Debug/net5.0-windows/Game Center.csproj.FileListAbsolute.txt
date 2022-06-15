@@ -256,7 +256,6 @@ C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\Syncfusion.
 C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Base.dll
 C:\Users\ruanc\Documents\GitHub\Game-Center\bin\Debug\net5.0-windows\Syncfusion.Tools.Windows.dll
 C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.FlappyBird.FlappyBird.resources
-C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.FlappyBird.FlappyBird1.resources
 C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.MenuPong.resources
 C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Pong.Pong2Players.resources
 C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Jogo_da_velha.JogoDaVelha.resources
@@ -316,3 +315,4 @@ C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Cente
 C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\ref\Game Center.dll
 C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.pdb
 C:\Users\User\Desktop\Gemecenter\Game-Center\obj\Debug\net5.0-windows\Game Center.genruntimeconfig.cache
+C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Games.Memory.MemoryGame.resources

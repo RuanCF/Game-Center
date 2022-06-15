@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlappyBird));
             this.scoreText = new System.Windows.Forms.Label();
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
             this.restartButton = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@
             this.pipeBottom = new System.Windows.Forms.PictureBox();
             this.scoreBackground = new System.Windows.Forms.PictureBox();
             this.clouds1 = new System.Windows.Forms.PictureBox();
+            this.BtnRegister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).BeginInit();
@@ -50,11 +52,11 @@
             // 
             this.scoreText.AutoSize = true;
             this.scoreText.BackColor = System.Drawing.Color.Transparent;
-            this.scoreText.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.scoreText.Font = new System.Drawing.Font("Alagard", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.scoreText.ForeColor = System.Drawing.Color.White;
-            this.scoreText.Location = new System.Drawing.Point(12, 558);
+            this.scoreText.Location = new System.Drawing.Point(53, 9);
             this.scoreText.Name = "scoreText";
-            this.scoreText.Size = new System.Drawing.Size(211, 55);
+            this.scoreText.Size = new System.Drawing.Size(202, 45);
             this.scoreText.TabIndex = 4;
             this.scoreText.Text = "Score: 0";
             this.scoreText.UseWaitCursor = true;
@@ -68,7 +70,7 @@
             // restartButton
             // 
             this.restartButton.BackColor = System.Drawing.Color.Gold;
-            this.restartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.restartButton.Font = new System.Drawing.Font("Alagard", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.restartButton.Location = new System.Drawing.Point(339, 217);
             this.restartButton.Name = "restartButton";
             this.restartButton.Size = new System.Drawing.Size(214, 63);
@@ -101,9 +103,9 @@
             // ground
             // 
             this.ground.Image = global::Game_Center.Properties.Resources.ground;
-            this.ground.Location = new System.Drawing.Point(-24, 524);
+            this.ground.Location = new System.Drawing.Point(-24, 574);
             this.ground.Name = "ground";
-            this.ground.Size = new System.Drawing.Size(924, 177);
+            this.ground.Size = new System.Drawing.Size(924, 155);
             this.ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ground.TabIndex = 3;
             this.ground.TabStop = false;
@@ -111,7 +113,7 @@
             // pipeBottom
             // 
             this.pipeBottom.Image = global::Game_Center.Properties.Resources.pipe;
-            this.pipeBottom.Location = new System.Drawing.Point(423, 359);
+            this.pipeBottom.Location = new System.Drawing.Point(422, 395);
             this.pipeBottom.Name = "pipeBottom";
             this.pipeBottom.Size = new System.Drawing.Size(113, 224);
             this.pipeBottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,10 +139,22 @@
             this.clouds1.TabIndex = 7;
             this.clouds1.TabStop = false;
             // 
+            // BtnRegister
+            // 
+            this.BtnRegister.Font = new System.Drawing.Font("Alagard", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.BtnRegister.Location = new System.Drawing.Point(691, 671);
+            this.BtnRegister.Name = "BtnRegister";
+            this.BtnRegister.Size = new System.Drawing.Size(82, 31);
+            this.BtnRegister.TabIndex = 14;
+            this.BtnRegister.Text = "Sair";
+            this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
+            // 
             // FlappyBird
             // 
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(769, 691);
+            this.ClientSize = new System.Drawing.Size(785, 726);
+            this.Controls.Add(this.BtnRegister);
             this.Controls.Add(this.restartButton);
             this.Controls.Add(this.scoreText);
             this.Controls.Add(this.pipeTop);
@@ -149,6 +163,8 @@
             this.Controls.Add(this.pipeBottom);
             this.Controls.Add(this.scoreBackground);
             this.Controls.Add(this.clouds1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(785, 730);
             this.MinimumSize = new System.Drawing.Size(785, 726);
             this.Name = "FlappyBird";
@@ -177,6 +193,7 @@
         private System.Windows.Forms.PictureBox scoreBackground;
         private System.Windows.Forms.Button restartButton;
         private System.Windows.Forms.PictureBox clouds1;
+        private System.Windows.Forms.Button BtnRegister;
     }
 }
 

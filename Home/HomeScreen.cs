@@ -2,6 +2,7 @@
 using Game_Center.Home;
 using Game_Center.Screens;
 using Game_Center.Song;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Game_Center
@@ -12,6 +13,9 @@ namespace Game_Center
         public HomeScreen()
         {
             InitializeComponent();
+            //BtnPassLobby.Parent = Me;
+ 
+
 
         }
 
@@ -52,7 +56,12 @@ namespace Game_Center
             Application.Exit();
         }
 
-        private void BtnPassLobby_Click(object sender, System.EventArgs e)
+        private void pictureBox1_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, System.EventArgs e)
         {
             LobbyScreen f = new();
             this.Hide();

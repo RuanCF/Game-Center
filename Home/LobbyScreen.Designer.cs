@@ -30,36 +30,18 @@ namespace Game_Center.Home
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LobbyScreen));
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.BoxPong = new System.Windows.Forms.PictureBox();
             this.carousel1 = new Syncfusion.Windows.Forms.Tools.Carousel();
             this.BoxVelha = new System.Windows.Forms.PictureBox();
             this.BoxFlappy = new System.Windows.Forms.PictureBox();
-            this.LblLista = new System.Windows.Forms.Label();
+            this.BoxMemoria = new System.Windows.Forms.PictureBox();
+            this.BtnRegister = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BoxPong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxVelha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxFlappy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxMemoria)).BeginInit();
             this.SuspendLayout();
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(27, 602);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(112, 36);
-            this.materialButton1.TabIndex = 6;
-            this.materialButton1.Text = "Game Lobby";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
             // BoxPong
             // 
@@ -116,15 +98,38 @@ namespace Game_Center.Home
             this.BoxFlappy.TabStop = false;
             this.BoxFlappy.DoubleClick += new System.EventHandler(this.BoxFlappy_DoubleClick);
             // 
-            // LblLista
+            // BoxMemoria
             // 
-            this.LblLista.AutoSize = true;
-            this.LblLista.BackColor = System.Drawing.Color.Transparent;
-            this.LblLista.Location = new System.Drawing.Point(411, 78);
-            this.LblLista.Name = "LblLista";
-            this.LblLista.Size = new System.Drawing.Size(38, 15);
-            this.LblLista.TabIndex = 11;
-            this.LblLista.Text = "label1";
+            this.BoxMemoria.Image = global::Game_Center.Properties.Resources.memoria;
+            this.BoxMemoria.Location = new System.Drawing.Point(12, 338);
+            this.BoxMemoria.Name = "BoxMemoria";
+            this.BoxMemoria.Size = new System.Drawing.Size(166, 97);
+            this.BoxMemoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BoxMemoria.TabIndex = 12;
+            this.BoxMemoria.TabStop = false;
+            this.BoxMemoria.DoubleClick += new System.EventHandler(this.BoxMemoria_DoubleClick);
+            // 
+            // BtnRegister
+            // 
+            this.BtnRegister.Font = new System.Drawing.Font("Alagard", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.BtnRegister.Location = new System.Drawing.Point(1170, 638);
+            this.BtnRegister.Name = "BtnRegister";
+            this.BtnRegister.Size = new System.Drawing.Size(82, 31);
+            this.BtnRegister.TabIndex = 13;
+            this.BtnRegister.Text = "Sair";
+            this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Alagard", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(547, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(307, 45);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Game Center";
             // 
             // LobbyScreen
             // 
@@ -132,29 +137,36 @@ namespace Game_Center.Home
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.LblLista);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BtnRegister);
+            this.Controls.Add(this.BoxMemoria);
             this.Controls.Add(this.BoxFlappy);
             this.Controls.Add(this.BoxVelha);
             this.Controls.Add(this.BoxPong);
-            this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.carousel1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LobbyScreen";
-            this.Text = "LobbyScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.BoxPong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxVelha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxFlappy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BoxMemoria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private MaterialSkin.Controls.MaterialButton materialButton1;
         private System.Windows.Forms.PictureBox BoxPong;
         private Syncfusion.Windows.Forms.Tools.Carousel carousel1;
         private System.Windows.Forms.PictureBox BoxVelha;
         private System.Windows.Forms.PictureBox BoxFlappy;
-        private System.Windows.Forms.Label LblLista;
+        private System.Windows.Forms.PictureBox BoxMemoria;
+        private System.Windows.Forms.Button BtnRegister;
+        private System.Windows.Forms.Label label1;
     }
 }
