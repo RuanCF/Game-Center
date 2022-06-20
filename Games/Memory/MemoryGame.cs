@@ -184,7 +184,7 @@ namespace Game_Center.Games.Memory
                     ConnectDB con = new();
                     con.conn.Open();
                     string nick = Interaction.InputBox("Insira seu nome para salvar a pontuacao", "Pontuacao: 50");
-                    SQLiteCommand coma = new();
+                    SQLiteCommand coma = new(con.conn);
                     coma.CommandText = "UPDATE UserData SET Score = Score + '50' WHERE NickName == '" + nick + "' ";
                     coma.ExecuteNonQuery();
                 }

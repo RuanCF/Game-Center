@@ -130,6 +130,9 @@
   <data name="pipedown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pipedown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Wallpaper1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wallpaper1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,11 +160,11 @@
   <data name="wallpaperflare.com_wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\wallpaperflare.com_wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purple Neon Galaxy Gaming Desktop Wallpaper2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Purple Neon Galaxy Gaming Desktop Wallpaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="1454745043738447911" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1454745043738447911.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple Neon Galaxy Gaming Desktop Wallpaper2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Purple Neon Galaxy Gaming Desktop Wallpaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="memoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\memoria.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,7 +175,7 @@
   <data name="Wellcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wellcome.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="night-the-city-building-pixels-wallpaper-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\night-the-city-building-pixels-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

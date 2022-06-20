@@ -133,6 +133,16 @@ namespace Game_Center.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap night_the_city_building_pixels_wallpaper_preview {
+            get {
+                object obj = ResourceManager.GetObject("night-the-city-building-pixels-wallpaper-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pipe {
             get {
                 object obj = ResourceManager.GetObject("pipe", resourceCulture);
