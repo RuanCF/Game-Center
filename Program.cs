@@ -24,7 +24,7 @@ namespace Game_Center
             Application.SetCompatibleTextRenderingDefault(false);
             ClassSong Song = new();
             Song.PlaySong();
-            Application.Run(new ScoreScreen()); //Tela q inicia o projeto!!!
+            Application.Run(new HomeScreen()); //Tela q inicia o projeto!!!
         }
     }
 }

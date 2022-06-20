@@ -77,5 +77,19 @@ namespace Game_Center.Home
             getdados();
             carregaLista();
         }
+
+        private void ScoreScreen_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            HomeScreen homeScreen = new();
+            homeScreen.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HomeScreen homeScreen = new();
+            this.Hide();
+            homeScreen.Closed += (s, args) => this.Close();
+            homeScreen.Show();
+        }
     }
 }

@@ -53,7 +53,7 @@ namespace Game_Center
         private void HomeScreen_FormClosed(object sender, FormClosedEventArgs e)
         {
             Song.StopSong();
-            Application.Exit();
+            
         }
 
         private void pictureBox1_Click(object sender, System.EventArgs e)
@@ -64,6 +64,14 @@ namespace Game_Center
         private void button1_Click(object sender, System.EventArgs e)
         {
             LobbyScreen f = new();
+            this.Hide();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void button2_Click(object sender, System.EventArgs e)
+        {
+            ScoreScreen f = new();
             this.Hide();
             f.Closed += (s, args) => this.Close();
             f.Show();
