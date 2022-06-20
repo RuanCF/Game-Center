@@ -1,5 +1,8 @@
 ﻿using Game_Center.Home;
+using Game_Center.Screens;
+using Microsoft.VisualBasic;
 using System;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -120,6 +123,22 @@ namespace Game_Center.Games.FlappyBird
             scoreText.Text += " Game Over!!!";
             restartButton.Visible = true;
             restartButton.Enabled = true;
+            try
+            {
+                ConnectDB con = new();
+                con.conn.Open();
+                string nick = Interaction.InputBox("Insira seu nome para salvar a pontuacao", "Pontuacao: 50");
+                SQLiteCommand coma = new(con.conn);
+                coma.CommandText = "UPDATE UserData SET Score = Score + '50' WHERE NickName == '" + nick + "' ";
+                coma.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Esse Nickname não existe, Registre um usuário");
+                RegisterScreen RS = new();
+                //this.Hide();
+                RS.Show();
+            }
         }
         #endregion
 
