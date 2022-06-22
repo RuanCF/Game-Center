@@ -223,6 +223,16 @@ namespace Game_Center.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap VelhaWall {
+            get {
+                object obj = ResourceManager.GetObject("VelhaWall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Wallpaper1 {
             get {
                 object obj = ResourceManager.GetObject("Wallpaper1", resourceCulture);
@@ -256,6 +266,16 @@ namespace Game_Center.Properties {
         internal static System.Drawing.Bitmap Wellcome {
             get {
                 object obj = ResourceManager.GetObject("Wellcome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wellcome__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Wellcome (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

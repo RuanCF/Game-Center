@@ -116,29 +116,30 @@ namespace Game_Center.Games.FlappyBird
 
         #endregion
 
-        #region EndGame
+         #region EndGame
         private void EndGame()
         {
             GameTimer.Stop();
-            scoreText.Text += " Game Over!!!";
+            scoreText.Text += " Fim de jogo!";
             restartButton.Visible = true;
             restartButton.Enabled = true;
             try
             {
                 ConnectDB con = new();
                 con.conn.Open();
-                string nick = Interaction.InputBox("Insira seu nome para salvar a pontuacao", "Pontuacao: 50");
+                string nick = Interaction.InputBox("Insira seu nome para salvar a pontuacao.", "Pontuacao: 50");
                 SQLiteCommand coma = new(con.conn);
                 coma.CommandText = "UPDATE UserData SET Score = Score + '50' WHERE NickName == '" + nick + "' ";
                 coma.ExecuteNonQuery();
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 MessageBox.Show("Esse Nickname não existe, Registre um usuário");
                 RegisterScreen RS = new();
                 //this.Hide();
                 RS.Show();
             }
+            GameTimer.Stop();
         }
         #endregion
 
@@ -165,6 +166,16 @@ namespace Game_Center.Games.FlappyBird
             LobbyScreen lb = new();
             this.Hide();
             lb.ShowDialog();
+        }
+
+        private void FlappyBird_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            GameTimer.Stop();
+        }
+
+        private void FlappyBird_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            GameTimer.Stop();
         }
     }
 }

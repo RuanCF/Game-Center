@@ -80,16 +80,14 @@ namespace Game_Center.Home
 
         private void ScoreScreen_FormClosing(object sender, FormClosingEventArgs e)
         {
-            HomeScreen homeScreen = new();
-            homeScreen.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            HomeScreen homeScreen = new();
+            LobbyScreen LS = new();
             this.Hide();
-            homeScreen.Closed += (s, args) => this.Close();
-            homeScreen.Show();
+            LS.Closed += (s, args) => this.Close();
+            //homeScreen.Show();
         }
     }
 }

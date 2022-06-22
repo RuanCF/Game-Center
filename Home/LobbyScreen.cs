@@ -23,28 +23,21 @@ namespace Game_Center.Home
         public LobbyScreen()
         {
             InitializeComponent();
-            this.carousel1.TransitionSpeed = 3f;
+            this.carousel1.TransitionSpeed = 4f;
             this.carousel1.CarouselPath = CarouselPath.Oval;
-            BoxPong.Visible = true;
-            BoxVelha.Visible = true;
-            BoxFlappy.Visible = true;
 
             //Add the custom controls into carousel
-            carousel1.Controls.Add(BoxPong);
+            //carousel1.Controls.Add(BoxPong);
             carousel1.Controls.Add(BoxVelha);
             carousel1.Controls.Add(BoxFlappy);
             carousel1.Controls.Add(BoxMemoria);
-            //carousel1.Controls.Add(buttonAdv5);
-            //carousel1.Controls.Add(buttonAdv6);
-
 
             //Add the custom controls into carousel items
-            carousel1.Items.Add(BoxPong);
+            //carousel1.Items.Add(BoxPong);
             carousel1.Items.Add(BoxVelha);
             carousel1.Items.Add(BoxFlappy);
             carousel1.Items.Add(BoxMemoria);
-            //carousel1.Items.Add(buttonAdv5);
-            //carousel1.Items.Add(buttonAdv6);
+
         }
 
         private void BoxPong_DoubleClick(object sender, EventArgs e)
@@ -57,12 +50,10 @@ namespace Game_Center.Home
 
         private void BoxFlappy_DoubleClick(object sender, EventArgs e)
         {
-            this.Hide();
             FlappyBird f = new();
+            this.Hide();
             f.Closed += (s, args) => this.Close();
             f.Show();
-            
-            
         }
 
         private void BoxVelha_DoubleClick(object sender, EventArgs e)
@@ -84,6 +75,14 @@ namespace Game_Center.Home
             this.Hide();
             MemoryGame f = new();
             this.Hide();
+            f.Closed += (s, args) => this.Close();
+            f.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ScoreScreen f = new();
+            //this.Hide();
             f.Closed += (s, args) => this.Close();
             f.Show();
         }

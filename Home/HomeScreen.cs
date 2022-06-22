@@ -9,14 +9,10 @@ namespace Game_Center
 {
     public partial class HomeScreen : Form
     {
-        ClassSong Song = new();
+        //ClassSong Song = new();
         public HomeScreen()
         {
             InitializeComponent();
-            //BtnPassLobby.Parent = Me;
- 
-
-
         }
 
         private void HomeScreen_Load(object sender, System.EventArgs e)
@@ -47,12 +43,12 @@ namespace Game_Center
 
         private void BtnStop_Click(object sender, System.EventArgs e)
         {
-            Song.StopSong();
+            //Song.StopSong();
         }
 
         private void HomeScreen_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Song.StopSong();
+            //Song.StopSong();
             
         }
 
@@ -69,12 +65,5 @@ namespace Game_Center
             f.Show();
         }
 
-        private void button2_Click(object sender, System.EventArgs e)
-        {
-            ScoreScreen f = new();
-            this.Hide();
-            f.Closed += (s, args) => this.Close();
-            f.Show();
-        }
     }
 }

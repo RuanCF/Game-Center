@@ -36,7 +36,7 @@ namespace Game_Center.Home
             this.BoxFlappy = new System.Windows.Forms.PictureBox();
             this.BoxMemoria = new System.Windows.Forms.PictureBox();
             this.BtnRegister = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BoxPong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxVelha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxFlappy)).BeginInit();
@@ -52,6 +52,7 @@ namespace Game_Center.Home
             this.BoxPong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BoxPong.TabIndex = 7;
             this.BoxPong.TabStop = false;
+            this.BoxPong.Visible = false;
             this.BoxPong.DoubleClick += new System.EventHandler(this.BoxPong_DoubleClick);
             // 
             // carousel1
@@ -111,25 +112,31 @@ namespace Game_Center.Home
             // 
             // BtnRegister
             // 
-            this.BtnRegister.Font = new System.Drawing.Font("Alagard", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.BtnRegister.Location = new System.Drawing.Point(1170, 638);
+            this.BtnRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegister.Font = new System.Drawing.Font("VALORANT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnRegister.ForeColor = System.Drawing.Color.Red;
+            this.BtnRegister.Location = new System.Drawing.Point(1232, 0);
             this.BtnRegister.Name = "BtnRegister";
-            this.BtnRegister.Size = new System.Drawing.Size(82, 31);
+            this.BtnRegister.Size = new System.Drawing.Size(32, 23);
             this.BtnRegister.TabIndex = 13;
-            this.BtnRegister.Text = "Sair";
+            this.BtnRegister.Text = "X";
             this.BtnRegister.UseVisualStyleBackColor = true;
             this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
-            // label1
+            // button2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Alagard", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(547, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(307, 45);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Game Center";
+            this.button2.BackColor = System.Drawing.Color.Snow;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("VALORANT", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(153, 33);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "ScoreList";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // LobbyScreen
             // 
@@ -137,7 +144,7 @@ namespace Game_Center.Home
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.BtnRegister);
             this.Controls.Add(this.BoxMemoria);
             this.Controls.Add(this.BoxFlappy);
@@ -156,7 +163,6 @@ namespace Game_Center.Home
             ((System.ComponentModel.ISupportInitialize)(this.BoxFlappy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BoxMemoria)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -167,6 +173,7 @@ namespace Game_Center.Home
         private System.Windows.Forms.PictureBox BoxFlappy;
         private System.Windows.Forms.PictureBox BoxMemoria;
         private System.Windows.Forms.Button BtnRegister;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

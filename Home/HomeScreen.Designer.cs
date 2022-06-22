@@ -34,7 +34,6 @@ namespace Game_Center
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnStop = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,6 +41,7 @@ namespace Game_Center
             // 
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.ForeColor = System.Drawing.Color.Red;
             this.btnExit.Name = "btnExit";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
@@ -70,20 +70,11 @@ namespace Game_Center
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Snow;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // HomeScreen
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnStop);
             this.Controls.Add(this.btnExit);
@@ -106,7 +97,6 @@ namespace Game_Center
         private System.Windows.Forms.Button BtnStop;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }
 

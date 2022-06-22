@@ -373,3 +373,4 @@ C:\Users\User\Desktop\Estudo\Game Ceneter\Game-Center\obj\Debug\net5.0-windows\G
 C:\Users\User\Desktop\Estudo\Game Ceneter\Game-Center\obj\Debug\net5.0-windows\ref\Game Center.dll
 C:\Users\User\Desktop\Estudo\Game Ceneter\Game-Center\obj\Debug\net5.0-windows\Game Center.pdb
 C:\Users\User\Desktop\Estudo\Game Ceneter\Game-Center\obj\Debug\net5.0-windows\Game Center.genruntimeconfig.cache
+C:\Users\ruanc\Documents\GitHub\Game-Center\obj\Debug\net5.0-windows\Game_Center.Home.ScoreScreen.resources

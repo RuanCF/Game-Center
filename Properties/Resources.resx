@@ -121,6 +121,9 @@
   <data name="titanfall-imc-soldiers-bluepoint-games-wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\titanfall-imc-soldiers-bluepoint-games-wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="flappy-bird" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flappy-bird.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,8 +133,8 @@
   <data name="pipedown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pipedown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="night-the-city-building-pixels-wallpaper-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\night-the-city-building-pixels-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Wallpaper1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wallpaper1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,6 +163,9 @@
   <data name="wallpaperflare.com_wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\wallpaperflare.com_wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Wellcome (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wellcome (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1454745043738447911" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1454745043738447911.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,7 +181,7 @@
   <data name="Wellcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wellcome.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="night-the-city-building-pixels-wallpaper-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\night-the-city-building-pixels-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VelhaWall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VelhaWall.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

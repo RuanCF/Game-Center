@@ -52,11 +52,11 @@
             // 
             this.scoreText.AutoSize = true;
             this.scoreText.BackColor = System.Drawing.Color.Transparent;
-            this.scoreText.Font = new System.Drawing.Font("Alagard", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.scoreText.ForeColor = System.Drawing.Color.White;
+            this.scoreText.Font = new System.Drawing.Font("VALORANT", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.scoreText.ForeColor = System.Drawing.Color.Black;
             this.scoreText.Location = new System.Drawing.Point(53, 9);
             this.scoreText.Name = "scoreText";
-            this.scoreText.Size = new System.Drawing.Size(202, 45);
+            this.scoreText.Size = new System.Drawing.Size(248, 48);
             this.scoreText.TabIndex = 4;
             this.scoreText.Text = "Score: 0";
             this.scoreText.UseWaitCursor = true;
@@ -70,12 +70,13 @@
             // restartButton
             // 
             this.restartButton.BackColor = System.Drawing.Color.Gold;
-            this.restartButton.Font = new System.Drawing.Font("Alagard", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.restartButton.Location = new System.Drawing.Point(339, 217);
+            this.restartButton.Font = new System.Drawing.Font("VALORANT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.restartButton.Location = new System.Drawing.Point(346, 227);
             this.restartButton.Name = "restartButton";
-            this.restartButton.Size = new System.Drawing.Size(214, 63);
+            this.restartButton.Size = new System.Drawing.Size(316, 44);
             this.restartButton.TabIndex = 6;
-            this.restartButton.Text = "Play Again";
+            this.restartButton.TabStop = false;
+            this.restartButton.Text = "Jogar Novamente";
             this.restartButton.UseVisualStyleBackColor = false;
             this.restartButton.Visible = false;
             this.restartButton.Click += new System.EventHandler(this.RestartButton_Click);
@@ -123,7 +124,7 @@
             // scoreBackground
             // 
             this.scoreBackground.BackColor = System.Drawing.Color.Transparent;
-            this.scoreBackground.Location = new System.Drawing.Point(12, 589);
+            this.scoreBackground.Location = new System.Drawing.Point(12, 574);
             this.scoreBackground.Name = "scoreBackground";
             this.scoreBackground.Size = new System.Drawing.Size(561, 180);
             this.scoreBackground.TabIndex = 5;
@@ -141,19 +142,24 @@
             // 
             // BtnRegister
             // 
-            this.BtnRegister.Font = new System.Drawing.Font("Alagard", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.BtnRegister.Location = new System.Drawing.Point(691, 671);
+            this.BtnRegister.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnRegister.BackColor = System.Drawing.SystemColors.Control;
+            this.BtnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegister.Font = new System.Drawing.Font("VALORANT", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.BtnRegister.ForeColor = System.Drawing.Color.Red;
+            this.BtnRegister.Location = new System.Drawing.Point(754, 0);
             this.BtnRegister.Name = "BtnRegister";
-            this.BtnRegister.Size = new System.Drawing.Size(82, 31);
-            this.BtnRegister.TabIndex = 14;
-            this.BtnRegister.Text = "Sair";
-            this.BtnRegister.UseVisualStyleBackColor = true;
+            this.BtnRegister.Size = new System.Drawing.Size(32, 23);
+            this.BtnRegister.TabIndex = 0;
+            this.BtnRegister.TabStop = false;
+            this.BtnRegister.Text = "X";
+            this.BtnRegister.UseVisualStyleBackColor = false;
             this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // FlappyBird
             // 
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(785, 726);
+            this.ClientSize = new System.Drawing.Size(785, 700);
             this.Controls.Add(this.BtnRegister);
             this.Controls.Add(this.restartButton);
             this.Controls.Add(this.scoreText);
@@ -165,9 +171,11 @@
             this.Controls.Add(this.clouds1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(785, 730);
-            this.MinimumSize = new System.Drawing.Size(785, 726);
             this.Name = "FlappyBird";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FlappyBird_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FlappyBird_FormClosed);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameKeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GameKeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).EndInit();

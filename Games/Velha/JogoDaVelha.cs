@@ -92,9 +92,9 @@ namespace Game_Center.Games.Jogo_da_velha
                || button3.Text == "X" && button5.Text == "X" && button7.Text == "X")
             {
                 AImoves.Stop();
-                MessageBox.Show("Player Wins"); 
+                MessageBox.Show("Vitoria player"); 
                 playerWins++; 
-                label1.Text = "Player Wins- " + playerWins;
+                label1.Text = "Vitoria player- " + playerWins;
                 
                 try
                 {
@@ -125,9 +125,9 @@ namespace Game_Center.Games.Jogo_da_velha
             {
 
                 AImoves.Stop();
-                MessageBox.Show("Computer Wins"); 
+                MessageBox.Show("Vitoria CPU"); 
                 computerWins++; 
-                label2.Text = "AI Wins- " + computerWins; 
+                label2.Text = "Vitoria CPU- " + computerWins; 
                 resetGame(); 
             }
         }
@@ -137,6 +137,11 @@ namespace Game_Center.Games.Jogo_da_velha
             LobbyScreen LS = new();
             this.Hide();
             LS.Show();
+        }
+
+        private void JogoDaVelha_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            AImoves.Stop();
         }
     }
 }

@@ -11,6 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Games\SpaceAttack\**" />
+    <EmbeddedResource Remove="Games\SpaceAttack\**" />
+    <None Remove="Games\SpaceAttack\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialSkin.2" Version="2.3.1" />
     <PackageReference Include="SQLite" Version="3.13.0" />
     <PackageReference Include="Syncfusion.Grid.Windows" Version="20.1.0.57" />
@@ -32,10 +38,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Games\SpaceAttack\" />
   </ItemGroup>
 
 </Project>

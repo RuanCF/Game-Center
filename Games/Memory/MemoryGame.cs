@@ -218,5 +218,10 @@ namespace Game_Center.Games.Memory
             this.Hide();
             LS.Show();
         }
+
+        private void MemoryGame_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            GameTImer.Stop();
+        }
     }
 }
